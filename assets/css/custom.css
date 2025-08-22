@@ -71,3 +71,43 @@
     font-size: 14px;
     color: #6c757d;
 }
+
+/* Sidebar CountDown */
+
+.sidebar-countdown #countdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  font-size: 22px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.sidebar-countdown #countdown div {
+    text-align: center; 
+}
+
+.sidebar-countdown #countdown div span {
+    padding: 5px;
+    background-color: #5c1fcc;
+    margin-bottom: 5px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+ 
+
+.sidebar-countdown #countdown span {
+  display: block;
+  font-weight: bold;
+}
+
+.sidebar-countdown .label {
+  font-size: 0.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

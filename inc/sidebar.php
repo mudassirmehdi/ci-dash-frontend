@@ -17,6 +17,27 @@
 								<!--end::User--> 
 							</div>
 							<!--end::Brand--> 
+
+							<div class="sidebar-countdown d-flex flex-stack">
+								<div id="countdown">
+									<div>
+										<span id="days"></span>
+										<div class="label">Days</div>
+									</div>
+									<div>
+										<span id="hours"></span>
+										<div class="label">Hours</div>
+									</div>
+									<div>
+										<span id="minutes"></span>
+										<div class="label">Minutes</div>
+									</div>
+									<div>
+										<span id="seconds"></span>
+										<div class="label">Seconds</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<!--end::Header-->
 						<!--begin::Navs-->
