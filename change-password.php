@@ -44,7 +44,31 @@
 							<div id="kt_app_content" class="app-content flex-column-fluid">
 								<!--begin::Content container--> 
 								<div id="kt_app_content_container" class="app-container container-fluid">
-								 
+								<div class="card mx-auto mt-5" style="max-width: 400px;">
+									<div class="card-body">
+										<h3 class="card-title text-center mb-3">Change Password</h3>
+										<p class="card-text text-muted mb-4" style="font-size:14px;">
+											Elizabeth, change your <b>coopincome™</b> Business account password here.<br>
+											Use a strong password: mix uppercase, lowercase, numbers, and symbols.
+										</p>
+										<form method="post" action="change-password.php" novalidate>
+											<input type="hidden" name="action" value="setpassword">
+											<div class="mb-3">
+												<label for="old_password" class="form-label">Old Password</label>
+												<input type="password" id="old_password" name="old_password" required class="form-control">
+											</div>
+											<div class="mb-3">
+												<label for="new_password" class="form-label">New Password</label>
+												<input type="password" id="new_password" name="new_password" required class="form-control">
+											</div>
+											<div class="mb-4">
+												<label for="confirm_new_password" class="form-label">Confirm New Password</label>
+												<input type="password" id="confirm_new_password" name="confirm_new_password" required class="form-control">
+											</div>
+											<button type="submit" class="btn btn-primary w-100">Change My Password</button>
+										</form>
+									</div>
+								</div>
 								</div> 
 								<!--end::Content container-->
 							</div>
