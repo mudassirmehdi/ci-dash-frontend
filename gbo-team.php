@@ -266,245 +266,327 @@ $(function() {
                             </div>
                             <div class="card-body">
                                 <div class="mb-4">
-                                    <div class="btn-group w-100" role="group" aria-label="Team Buttons">
-                                        <button id="ci6But" class="btn btn-outline-dark font-weight-bold active" type="button" onclick="showTeamTab('ci6')">i6</button>
-                                        <button id="ci22But" class="btn btn-outline-dark font-weight-bold" type="button" onclick="showTeamTab('ci22')">i22</button>
-                                        <button id="ci53But" class="btn btn-outline-dark font-weight-bold" type="button" onclick="showTeamTab('ci53')">i53</button>
-                                        <button id="ci110But" class="btn btn-outline-dark font-weight-bold" type="button" onclick="showTeamTab('ci110')">i110</button>
-                                        <button id="ci525But" class="btn btn-outline-dark font-weight-bold" type="button" onclick="showTeamTab('ci525')">i525</button>
-                                        <button id="ci1050But" class="btn btn-outline-dark font-weight-bold" type="button" onclick="showTeamTab('ci1050')">i1050</button>
+                                    <div class="btn-group w-100 mb-3" role="group" aria-label="Team Buttons" style="gap: 8px;">
+                                        <button id="ci6But" class="btn btn-outline-primary fw-bold py-2 team-btn active" type="button" onclick="showTeamTab('ci6')">i6</button>
+                                        <button id="ci22But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci22')">i22</button>
+                                        <button id="ci53But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci53')">i53</button>
+                                        <button id="ci110But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci110')">i110</button>
+                                        <button id="ci525But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci525')">i525</button>
+                                        <button id="ci1050But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci1050')">i1050</button>
+                                    </div>
+                                    <style>
+                                    .team-btn {
+                                        border-radius: 0.5rem !important;
+                                        margin-right: 0 !important;
+                                        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+                                        font-size: 1.1rem;
+                                        box-shadow: 0 2px 8px rgba(30,45,100,0.08);
+                                        background: #fff;
+                                        border: 2px solid #1dbdef;
+                                    }
+                                    .team-btn.active, .team-btn.btn-dark {
+                                        background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                        color: #fff !important;
+                                        border-color: #7f00ff;
+                                        box-shadow: 0 4px 16px rgba(30,45,100,0.12);
+                                    }
+                                    .team-btn:hover, .team-btn:focus {
+                                        background: #1dbdef;
+                                        color: #fff !important;
+                                        border-color: #7f00ff;
+                                    }
+                                    .btn-group.w-100 {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        gap: 8px;
+                                    }
+                                    </style>
+                      
+                              
+                                    <div class="p_top_30 mt-10">
+                                        <ul class="nav nav-tabs nav-justified mb-3" id="teamInnerTabs" style="background: #f8f9fa; border-radius: 0.5rem;">
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#level_all" id="action_level_all" data-toggle="tab" class="nav-link active show text-primary fw-bold" onclick="showInnerTab('all')" style="font-size: 1.1rem; border-radius: 0.5rem 0 0 0.5rem;">
+                                                    <i class="fa fa-users me-1"></i> All
+                                                </a>
+                                            </li>
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#level_active" id="action_level_active" data-toggle="tab" class="nav-link text-success fw-bold" onclick="showInnerTab('active')" style="font-size: 1.1rem;">
+                                                    <i class="fa fa-check-circle me-1"></i> Active
+                                                </a>
+                                            </li>
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#level_lapsed" id="action_level_lapsed" data-toggle="tab" class="nav-link text-warning fw-bold" onclick="showInnerTab('lapsed')" style="font-size: 1.1rem;">
+                                                    <i class="fa fa-clock me-1"></i> Lapsed
+                                                </a>
+                                            </li>
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#level_other" id="action_level_other" data-toggle="tab" class="nav-link text-info fw-bold" onclick="showInnerTab('free')" style="font-size: 1.1rem; border-radius: 0 0.5rem 0.5rem 0;">
+                                                    <i class="fa fa-gift me-1"></i> Free
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <style>
+                                            #teamInnerTabs .nav-link {
+                                                transition: background 0.2s, color 0.2s;
+                                                margin-right: 2px;
+                                                background: #fff;
+                                                border: 1px solid #dee2e6;
+                                            }
+                                            #teamInnerTabs .nav-link.active,
+                                            #teamInnerTabs .nav-link.show {
+                                                background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                                color: #fff !important;
+                                                border-color: #1dbdef #7f00ff #7f00ff #1dbdef;
+                                                box-shadow: 0 2px 8px rgba(30, 45, 100, 0.08);
+                                            }
+                                            #teamInnerTabs .nav-link i {
+                                                font-size: 1rem;
+                                                vertical-align: middle;
+                                            }
+                                        </style>
+                                    </div>
+                                </div>
+
+                                <div id="teamTablesArea">
+    <!-- For each team and tab, create a dummy table. Only the selected team and tab's table is shown. -->
+    <div id="teamTable-ci6-all" class="team-table-inner" style="display:block;">
+        <table id="datatable-ci6-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Name</th><th>Total/Active</th></tr></thead>
+            <tbody>
+                <tr><td>Zak Lio</td><td>3 / 0</td></tr>
+                <tr><td>Zackary Makcery</td><td>0 / 0</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci6-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci6-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Name</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Zak Lio</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci6-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci6-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Name</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Zackary Makcery</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci6-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci6-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Name</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Jane Doe</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Repeat for ci22, ci53, ci110, ci525, ci1050 with different dummy data -->
+    <div id="teamTable-ci22-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci22-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Product</th><th>Qty</th><th>Price</th></tr></thead>
+            <tbody>
+                <tr><td>Apple</td><td>10</td><td>$5</td></tr>
+                <tr><td>Banana</td><td>20</td><td>$3</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci22-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci22-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Product</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Apple</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci22-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci22-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Product</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Banana</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci22-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci22-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Product</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Orange</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci53-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci53-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Country</th><th>Capital</th><th>Population</th></tr></thead>
+            <tbody>
+                <tr><td>USA</td><td>Washington</td><td>330M</td></tr>
+                <tr><td>UK</td><td>London</td><td>67M</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci53-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci53-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Country</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>USA</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci53-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci53-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Country</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>UK</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci53-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci53-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Country</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Canada</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci110-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci110-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Course</th><th>Duration</th><th>Fee</th></tr></thead>
+            <tbody>
+                <tr><td>Math</td><td>3 Months</td><td>$100</td></tr>
+                <tr><td>Science</td><td>6 Months</td><td>$200</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci110-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci110-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Course</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Math</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci110-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci110-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Course</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Science</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci110-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci110-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Course</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>English</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci525-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci525-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>City</th><th>State</th><th>Zip</th></tr></thead>
+            <tbody>
+                <tr><td>New York</td><td>NY</td><td>10001</td></tr>
+                <tr><td>Los Angeles</td><td>CA</td><td>90001</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci525-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci525-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>City</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>New York</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci525-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci525-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>City</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Los Angeles</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci525-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci525-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>City</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Chicago</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci1050-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci1050-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Company</th><th>Industry</th><th>Employees</th></tr></thead>
+            <tbody>
+                <tr><td>Acme Corp</td><td>Tech</td><td>500</td></tr>
+                <tr><td>Beta LLC</td><td>Finance</td><td>200</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci1050-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci1050-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Company</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Acme Corp</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci1050-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci1050-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Company</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Beta LLC</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci1050-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci1050-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Company</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Gamma Inc</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
 <script>
+var currentTeam = 'ci6';
+var currentTab = 'all';
+$(document).ready(function() {
+    // Set initial active button for .btn-group.w-100
+    $('.btn-group.w-100 > button').removeClass('active btn-dark').addClass('btn-outline-dark');
+    $('#ci6But').addClass('active btn-dark').removeClass('btn-outline-dark');
+});
 function showTeamTab(team) {
-    $('.btn-group button').removeClass('active');
-    $('#' + team + 'But').addClass('active');
-    var tabId = '#team_' + team;
-    $('#teamTabsContent .tab-pane').removeClass('show active');
-    $(tabId).addClass('show active');
-    var table = $('#table-' + team).DataTable();
-    if (table) table.draw(false);
+    currentTeam = team;
+    // Remove active class from all .btn-group.w-100 buttons
+    $('.btn-group.w-100 > button').removeClass('active btn-dark').addClass('btn-outline-dark');
+    // Add active class to the selected button
+    $('#ci' + team + 'But').addClass('active btn-dark').removeClass('btn-outline-dark');
+    // Hide all team tables
+    $('.team-table-inner').hide();
+    // Show current tab for selected team
+    $('#teamTable-' + team + '-' + currentTab).show();
+}
+function showInnerTab(tab) {
+    currentTab = tab;
+    // Set active tab
+    $('#teamInnerTabs .nav-link').removeClass('active show');
+    $('#action_level_' + tab).addClass('active show');
+    // Hide all team tables
+    $('.team-table-inner').hide();
+    // Show current team and tab
+    $('#teamTable-' + currentTeam + '-' + tab).show();
 }
 $(document).ready(function() {
-    $('#table-ci6').DataTable({responsive: true});
-    $('#table-ci22').DataTable({responsive: true});
-    $('#table-ci53').DataTable({responsive: true});
-    $('#table-ci110').DataTable({responsive: true});
-    $('#table-ci525').DataTable({responsive: true});
-    $('#table-ci1050').DataTable({responsive: true});
+    // Initialize DataTables for all dummy tables
+    $('table').each(function() {
+        if (!$.fn.DataTable.isDataTable(this)) {
+            $(this).DataTable({responsive: true});
+        }
+    });
 });
 </script>
-                                    </div>
-                                    <!-- Removed duplicate loadTeam and updateTable function definitions to prevent conflicts -->
-                                </div>
-
-                                <script>
-                                function loadTeam(team) {
-                                    $('.btn-group button').removeClass('active');
-                                    $('#' + team + 'But').addClass('active');
-                                    // Activate the 'All' tab using Bootstrap's tab API
-                                    var allTab = document.querySelector('#level_all_tab');
-                                    if (allTab) {
-                                        var tabInstance = bootstrap.Tab.getOrCreateInstance(allTab);
-                                        tabInstance.show();
-                                    }
-                                    // AJAX to fetch team members and update tables
-                                    $.ajax({
-                                        url: 'get_team_members.php',
-                                        method: 'POST',
-                                        data: { team: team },
-                                        dataType: 'json',
-                                        success: function(data) {
-                                            updateTable('all', data.all);
-                                            updateTable('active', data.active);
-                                            updateTable('lapsed', data.lapsed);
-                                            updateTable('suspended', data.suspended);
-                                            updateTable('cancelled', data.cancelled);
-                                            // Redraw DataTables after updating
-                                            $('#table-all').DataTable().draw();
-                                            $('#table-active').DataTable().draw();
-                                            $('#table-lapsed').DataTable().draw();
-                                            $('#table-suspended').DataTable().draw();
-                                            $('#table-cancelled').DataTable().draw();
-                                        }
-                                    });
-                                }
-
-                                function updateTable(type, members) {
-                                    var tbody = $('#tbody-' + type);
-                                    tbody.empty();
-                                    if (!members || members.length === 0) {
-                                        tbody.append('<tr><td>No records</td><td></td></tr>');
-                                    } else {
-                                        members.forEach(function(member) {
-                                            tbody.append('<tr><td>' + $('<div>').text(member.name).html() + '</td><td>' + member.total + ' / ' + member.active + '</td></tr>');
-                                        });
-                                    }
-                                    // Redraw DataTable after DOM update
-                                    var table = $('#table-' + type).DataTable();
-                                    if (table) table.draw(false);
-                                }
-                                </script>
-                                <div class="mb-3">
-                                    <h5 class="font-weight-bold text-orange">My Personally Registered coopincome™ Members</h5>
-                                </div>
-                                <ul class="nav nav-tabs mb-3" id="memberTabs" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active font-weight-bold" id="level_all_tab" data-bs-toggle="tab" href="#level_all" role="tab">All</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-bold" id="level_active_tab" data-bs-toggle="tab" href="#level_active" role="tab">Active</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-bold" id="level_lapsed_tab" data-bs-toggle="tab" href="#level_lapsed" role="tab">Lapsed</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-bold" id="level_suspended_tab" data-bs-toggle="tab" href="#level_suspended" role="tab">Suspended</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-bold" id="level_cancelled_tab" data-bs-toggle="tab" href="#level_cancelled" role="tab">Cancelled</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="memberTabsContent">
-                                    <div class="tab-pane fade show active" id="level_all" role="tabpanel">
-                                        <div class="table-responsive">
-                                            <table id="table-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-                                                <thead class="thead-dark">
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Total/Active</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tbody-all">
-                                                    <tr>
-                                                        <td>Zak Lio</td>
-                                                        <td>3 / 0</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Zackary Makcery</td>
-                                                        <td>0 / 0</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jane Doe</td>
-                                                        <td>5 / 2</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="level_active" role="tabpanel">
-                                        <div class="table-responsive">
-                                            <table id="table-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-                                                <thead class="thead-dark">
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Total/Active</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tbody-active">
-                                                    <?php foreach(getMembers('active') as $member): ?>
-                                                        <tr>
-                                                            <td><?= htmlspecialchars($member['name']) ?></td>
-                                                            <td><?= $member['total'] ?> / <?= $member['active'] ?></td>
-                                                        </tr>
-                                                    <?php endforeach; ?>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="level_lapsed" role="tabpanel">
-                                        <div class="table-responsive">
-                                            <table id="table-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-                                                <thead class="thead-dark">
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Total/Active</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tbody-lapsed">
-                                                    <?php $lapsed = getMembers('lapsed'); ?>
-                                                    <?php if(empty($lapsed)): ?>
-                                                        <tr><td>No records</td><td></td></tr>
-                                                    <?php else: ?>
-                                                        <?php foreach($lapsed as $member): ?>
-                                                            <tr>
-                                                                <td><?= htmlspecialchars($member['name']) ?></td>
-                                                                <td><?= $member['total'] ?> / <?= $member['active'] ?></td>
-                                                            </tr>
-                                                        <?php endforeach; ?>
-                                                    <?php endif; ?>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="level_suspended" role="tabpanel">
-                                        <div class="table-responsive">
-                                            <table id="table-suspended" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-                                                <thead class="thead-dark">
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Total/Active</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tbody-suspended">
-                                                    <?php $suspended = getMembers('suspended'); ?>
-                                                    <?php if(empty($suspended)): ?>
-                                                        <tr><td>No records</td><td></td></tr>
-                                                    <?php else: ?>
-                                                        <?php foreach($suspended as $member): ?>
-                                                            <tr>
-                                                                <td><?= htmlspecialchars($member['name']) ?></td>
-                                                                <td><?= $member['total'] ?> / <?= $member['active'] ?></td>
-                                                            </tr>
-                                                        <?php endforeach; ?>
-                                                    <?php endif; ?>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="level_cancelled" role="tabpanel">
-                                        <div class="table-responsive">
-                                            <table id="table-cancelled" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-                                                <thead class="thead-dark">
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Total/Active</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="tbody-cancelled">
-                                                    <?php $cancelled = getMembers('cancelled'); ?>
-                                                    <?php if(empty($cancelled)): ?>
-                                                        <tr><td>No records</td><td></td></tr>
-                                                    <?php else: ?>
-                                                        <?php foreach($cancelled as $member): ?>
-                                                            <tr>
-                                                                <td><?= htmlspecialchars($member['name']) ?></td>
-                                                                <td><?= $member['total'] ?> / <?= $member['active'] ?></td>
-                                                            </tr>
-                                                        <?php endforeach; ?>
-                                                    <?php endif; ?>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                     
-
-  
-
-                        <!-- DataTables JS initialization -->
-                        <script>
-                        $(document).ready(function() {
-                            $('#table-all').DataTable();
-                            $('#table-active').DataTable();
-                            $('#table-lapsed').DataTable();
-                            $('#table-suspended').DataTable();
-                            $('#table-cancelled').DataTable();
-                        });
-                        </script>
-
 
 
 

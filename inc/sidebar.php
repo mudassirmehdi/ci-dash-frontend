@@ -63,9 +63,12 @@
 									 
 									</div>
 
-									<div  class="menu-item  menu-accordion mb-3">
+
+
+
+	<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-3">
 										<!--begin:Menu link-->
-										<span class="menu-link">
+										<span class="menu-link bg-gray-500">
 											<span class="menu-icon">
 												<i class="ki-duotone ki-gift fs-2">
 													<span class="path1"></span>
@@ -74,23 +77,76 @@
 													<span class="path4"></span>
 												</i>
 											</span>
-											<span class="menu-title">We Prove It Free</span> 
+											<span class="menu-title">We Prove It Free</span> <span class="menu-arrow"></span>
 										</span>
 										<!--end:Menu link--> 
+										<!--begin:Menu sub-->
+										<div class="menu-sub menu-sub-accordion">
+											<!--begin:Menu item-->
+											<div class="menu-item ">
+												<!--begin:Menu link-->
+												<a class="menu-link" href="wpif-cooperative.php">
+													<span class="menu-bullet">
+														<i class="ki-outline ki-microsoft"></i>
+													</span>
+													<span class="menu-title">Cooperative</span>
+												</a>
+												<!--end:Menu link-->
+											</div>
+											<!--end:Menu item-->
+											<!--begin:Menu item-->
+											<div class="menu-item">
+												<!--begin:Menu link-->
+												<a class="menu-link" href="wpif-gbo-team.php">
+													<span class="menu-bullet">
+														<i class="ki-outline ki-profile-user"></i>
+													</span>
+													<span class="menu-title">GBO Team</span>
+												</a>
+												<!--end:Menu link-->
+											</div>
+	
+											<!--end:Menu item-->
+										 
+										</div>
+										<!--end:Menu sub-->
+										<!--end:Menu sub-->
 									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 									<!--end:Menu item-->
                                     <!--begin:Menu item-->
-									<div class="menu-item  menu-accordion mb-3">
+
+	<div class="menu-item  menu-accordion mb-3">
 										<!--begin:Menu link-->
-										<span class="menu-link">
+										<a class="menu-link" href="cooperative.php">
 											<span class="menu-icon">
 												<i class="ki-outline ki-microsoft"></i>
 											</span>
 											<span class="menu-title">Cooperative</span> 
-										</span>
+                                        </a>
 										<!--end:Menu link--> 
 									</div>
-									<!--end:Menu item--> 
+
+
+
+
+			
 									<!--begin:Menu item-->
 
 	<div class="menu-item  menu-accordion mb-3">
