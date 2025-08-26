@@ -25,6 +25,8 @@
 		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+		    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<!--end::Global Stylesheets Bundle-->
 	</head>
 	<!--end::Head-->

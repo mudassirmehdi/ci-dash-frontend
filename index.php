@@ -555,6 +555,44 @@ function openModalAST() {
 										</div>
 									<?php endforeach; ?>
 								</div>
+
+								<div class="row user_acc_info mb-4">
+									<?php
+									$levels = [
+										['name' => 'i6', 'qualified' => 'No', 'auto' => 'ci6_Auto'],
+										['name' => 'i22', 'qualified' => 'No', 'auto' => 'ci22_Auto'],
+										['name' => 'i53', 'qualified' => 'No', 'auto' => 'ci53_Auto'],
+										['name' => 'i110', 'qualified' => 'No', 'auto' => 'ci110_Auto'],
+										['name' => 'i525', 'qualified' => 'No', 'auto' => 'ci525_Auto'],
+										['name' => 'i1050', 'qualified' => 'No', 'auto' => 'ci1050_Auto'],
+									];
+									foreach ($levels as $level): ?>
+									<div class="col-lg-2 col-md-4 mb-3">
+										<div class="card shadow-sm h-100 border-primary">
+											<div class="card-body text-center p-3">
+												<h5 class="fw-bold mb-2 text-primary">You are active in <?= $level['name'] ?></h5>
+												<div class="d-flex justify-content-center align-items-center mb-2">
+													<div class="form-check form-switch">
+														<input class="form-check-input" type="checkbox" id="switch_<?= $level['auto'] ?>" checked onchange="setRenewUpgrade('<?= $level['auto'] ?>', this.checked ? 'Y' : 'N')">
+														<label class="form-check-label" for="switch_<?= $level['auto'] ?>">
+															<span class="badge bg-success">Renew</span>
+														</label>
+													</div>
+												</div>
+												<div>
+													<small class="fw-bold text-muted">
+														<span class="text-dark">Qualified:</span> <?= $level['qualified'] ?>
+													</small>
+												</div>
+											</div>
+										</div>
+									</div>
+									<?php endforeach; ?>
+								</div>
+
+
+
+
 								<!-- Section: 3 Minutes-A-Day Steps -->
 								<div class="row">
 									<div class="col-lg-12">
@@ -704,8 +742,28 @@ $(function() {
 </script>
 						
 
- 
+
 		
 
 
 <?php require_once('inc/footer.php'); ?>
+ <script>
+$(function() {
+ 
+    $('.form-check-input[id^="switch_"]').on('change', function() {
+        var checked = $(this).is(':checked');
+        var cardBody = $(this).closest('.card-body');
+        var h5 = cardBody.find('h5.fw-bold');
+        if (checked) {
+            h5.text('You are active in ' + h5.text().replace(/You are (active|inactive) in /, ''));
+            h5.removeClass('text-danger').addClass('text-primary');
+            cardBody.find('.badge').removeClass('bg-danger').addClass('bg-success').text('Renew');
+        } else {
+            h5.text('You are inactive in ' + h5.text().replace(/You are (active|inactive) in /, ''));
+            h5.removeClass('text-primary').addClass('text-danger');
+            cardBody.find('.badge').removeClass('bg-success').addClass('bg-danger').text('Inactive');
+        }
+        
+    });
+});
+</script>
