@@ -403,198 +403,177 @@ function openModalAST() {
 									<?php endforeach; ?>
 								</div>
 								<!-- Section: CoopINCOME -->
-								<h1 class="fw-bold text-start mb-4" style="color: #7f00ff;">CoopINCOME - (Real Earning)</h1>
-								<div class="row g-3 mb-4">
-									<?php
-									$incomes = [
-										[
-											'id'=>'income',
-											'label'=>'i6',
-											'amount'=>'$50.25',
-											'modal'=>'income',
-											'title'=>'CoopINCOME 6',
-											'today'=>'$0',
-											'week'=>'$0',
-											'month'=>'$8',
-											'year'=>'$50.25',
-											'overall'=>'$50.25'
-										],
-										[
-											'id'=>'income22',
-											'label'=>'i22',
-											'amount'=>'$89.25',
-											'modal'=>'income22',
-											'title'=>'CoopINCOME 22',
-											'today'=>'$0',
-											'week'=>'$0',
-											'month'=>'$15',
-											'year'=>'$89.25',
-											'overall'=>'$89.25'
-										],
-										[
-											'id'=>'income53',
-											'label'=>'i53',
-											'amount'=>'$192.50',
-											'modal'=>'income53',
-											'title'=>'CoopINCOME 53',
-											'today'=>'$0',
-											'week'=>'$0',
-											'month'=>'$32',
-											'year'=>'$192.50',
-											'overall'=>'$192.50'
-										],
-										[
-											'id'=>'income110',
-											'label'=>'i110',
-											'amount'=>'$325.00',
-											'modal'=>'income110',
-											'title'=>'CoopINCOME 110',
-											'today'=>'$0',
-											'week'=>'$0',
-											'month'=>'$54',
-											'year'=>'$325.00',
-											'overall'=>'$325.00'
-										],
-										[
-											'id'=>'income525',
-											'label'=>'i525',
-											'amount'=>'$700.00',
-											'modal'=>'income525',
-											'title'=>'CoopINCOME 525',
-											'today'=>'$0',
-											'week'=>'$0',
-											'month'=>'$117',
-											'year'=>'$700.00',
-											'overall'=>'$700.00'
-										],
-										[
-											'id'=>'income1050',
-											'label'=>'i1050',
-											'amount'=>'$1,650.00',
-											'modal'=>'income1050',
-											'title'=>'CoopINCOME 1050',
-											'today'=>'$0',
-											'week'=>'$0',
-											'month'=>'$275',
-											'year'=>'$1,650.00',
-											'overall'=>'$1,650.00'
-										],
-									];
-									foreach($incomes as $income): ?>
-										<div class="col-md-4 col-lg-2">
-											<div class="card border-success shadow h-100">
-												<a href="#" data-bs-toggle="modal" data-bs-target="#<?= $income['modal'] ?>" class="text-decoration-none">
-													<div class="card-body text-center">
-														<div class="fw-bold fs-4 text-success"><?= $income['label'] ?></div>
-														<div class="fw-bold fs-5 text-dark"><?= $income['amount'] ?></div>
-													</div>
-												</a>
-											</div>
-										</div>
-										<!-- Modal for CoopINCOME -->
-										<div class="modal fade" id="<?= $income['modal'] ?>" tabindex="-1" role="dialog" aria-labelledby="<?= $income['modal'] ?>Label" aria-hidden="true">
-											<div class="modal-dialog modal-dialog-centered" role="document">
-												<div class="modal-content rounded-4 shadow-lg border-0">
-													<div class="modal-header bg-gradient-success text-white rounded-top-4">
-														<div class="d-flex align-items-center w-100">
-															<div class="me-2">
-																<i class="fa fa-dollar-sign fs-3 text-warning"></i>
-															</div>
-															<h5 class="modal-title flex-grow-1" style="font-size: 18px; font-weight: bold;" id="<?= $income['modal'] ?>Label">
-																<?= $income['title'] ?> <span class="badge bg-success ms-2">(Real Earning)</span>
-															</h5>
-															<button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
-														</div>
-													</div>
-													<div class="modal-body p-4 bg-light">
-														<div class="row g-3">
-															<div class="col-12">
-																<div class="card border-0 shadow-sm mb-2">
-																	<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
-																		<span class="fw-bold text-success"><i class="fa fa-calendar-day me-2"></i>Today Aug 25</span>
-																		<span class="fw-bold fs-5 text-dark"><?= $income['today'] ?></span>
-																	</div>
-																</div>
-															</div>
-															<div class="col-12">
-																<div class="card border-0 shadow-sm mb-2">
-																	<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
-																		<span class="fw-bold text-info"><i class="fa fa-calendar-week me-2"></i>Week of Aug 25</span>
-																		<span class="fw-bold fs-5 text-dark"><?= $income['week'] ?></span>
-																	</div>
-																</div>
-															</div>
-															<div class="col-12">
-																<div class="card border-0 shadow-sm mb-2">
-																	<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
-																		<span class="fw-bold text-warning"><i class="fa fa-calendar-alt me-2"></i>Month of Aug</span>
-																		<span class="fw-bold fs-5 text-dark"><?= $income['month'] ?></span>
-																	</div>
-																</div>
-															</div>
-															<div class="col-12">
-																<div class="card border-0 shadow-sm mb-2">
-																	<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
-																		<span class="fw-bold text-primary"><i class="fa fa-calendar me-2"></i>Year 2025</span>
-																		<span class="fw-bold fs-5 text-dark"><?= $income['year'] ?></span>
-																	</div>
-																</div>
-															</div>
-															<div class="col-12">
-																<div class="card border-0 shadow-sm mb-2 bg-gradient-success">
-																	<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
-																		<span class="fw-bold text-dark"><i class="fa fa-trophy me-2 text-warning"></i>Overall</span>
-																		<span class="fw-bold fs-4 text-success currency-field"><?= $income['overall'] ?></span>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									<?php endforeach; ?>
+							<div class="row align-items-center mb-4 user_acc_info">
+								<div class="col-md-6">
+									<h1 class="fw-bold text-start mb-0" style="color: #7f00ff;">
+										 CoopINCOME <span class="badge bg-success ms-2">(Real Earning)</span>
+									</h1>
 								</div>
+								<div class="col-md-6 text-end">
+									<div class="d-inline-flex align-items-center gap-10">
+										<h2 class="fw-bold mb-0 me-3">Pay It Forward:</h2>
 
-								<div class="row user_acc_info mb-4">
-									<?php
-									$levels = [
-										['name' => 'i6', 'qualified' => 'No', 'auto' => 'ci6_Auto'],
-										['name' => 'i22', 'qualified' => 'No', 'auto' => 'ci22_Auto'],
-										['name' => 'i53', 'qualified' => 'No', 'auto' => 'ci53_Auto'],
-										['name' => 'i110', 'qualified' => 'No', 'auto' => 'ci110_Auto'],
-										['name' => 'i525', 'qualified' => 'No', 'auto' => 'ci525_Auto'],
-										['name' => 'i1050', 'qualified' => 'No', 'auto' => 'ci1050_Auto'],
-									];
-									foreach ($levels as $level): ?>
-									<div class="col-lg-2 col-md-4 mb-3">
-										<div class="card shadow-sm h-100 border-primary">
-											<div class="card-body text-center p-3">
-												<h5 class="fw-bold mb-2 text-primary">You are active in <?= $level['name'] ?></h5>
-												<div class="d-flex justify-content-center align-items-center mb-2">
-													<div class="form-check form-switch">
-														<input class="form-check-input" type="checkbox" id="switch_<?= $level['auto'] ?>" checked onchange="setRenewUpgrade('<?= $level['auto'] ?>', this.checked ? 'Y' : 'N')">
-														<label class="form-check-label" for="switch_<?= $level['auto'] ?>">
-															<span class="badge bg-success">Renew</span>
-														</label>
-													</div>
+										<div class="form-check form-switch d-flex align-items-center">
+											<input class="form-check-input" type="checkbox" id="allowCiPifSwitch" checked onchange="setRenewUpgrade('allowCiPif', this.checked ? 'Y' : 'N'); updateAutoRenewLabel('allowCiPifStatus', this.checked)">
+											<label class="form-check-label fw-bold ms-2" for="allowCiPifSwitch">
+												<span id="allowCiPifStatus" style="color: #198754;">Auto Renew</span>
+											</label>
+										</div>
+	
+									</div>
+								</div>
+							</div>
+							<div class="row user_acc_info mb-4">
+								<?php
+								$incomeLevels = [
+									[
+										'id' => 'income6',
+										'label' => 'i6',
+										'amount' => '$50.25',
+										'qualified' => 'No',
+										'exp' => 'Dec 31',
+										'year' => '$50.25',
+										'overall' => '$50.25',
+										'modalId' => 'income6',
+										'autoRenew' => true,
+									],
+									[
+										'id' => 'income22',
+										'label' => 'i22',
+										'amount' => '$89.25',
+										'qualified' => 'No',
+										'exp' => 'Dec 31',
+										'year' => '$89.25',
+										'overall' => '$89.25',
+										'modalId' => 'income22',
+										'autoRenew' => true,
+									],
+									[
+										'id' => 'income53',
+										'label' => 'i53',
+										'amount' => '$192.50',
+										'qualified' => 'No',
+										'exp' => 'Dec 31',
+										'year' => '$192.50',
+										'overall' => '$192.50',
+										'modalId' => 'income53',
+										'autoRenew' => true,
+									],
+									[
+										'id' => 'income110',
+										'label' => 'i110',
+										'amount' => '$325.00',
+										'qualified' => 'No',
+										'exp' => 'Dec 31',
+										'year' => '$325.00',
+										'overall' => '$325.00',
+										'modalId' => 'income110',
+										'autoRenew' => true,
+									],
+									[
+										'id' => 'income525',
+										'label' => 'i525',
+										'amount' => '$700.00',
+										'qualified' => 'No',
+										'exp' => 'Dec 31',
+										'year' => '$700.00',
+										'overall' => '$700.00',
+										'modalId' => 'income525',
+										'autoRenew' => true,
+									],
+									[
+										'id' => 'income1050',
+										'label' => 'i1050',
+										'amount' => '$1,650.00',
+										'qualified' => 'No',
+										'exp' => 'Dec 31',
+										'year' => '$1,650.00',
+										'overall' => '$1,650.00',
+										'modalId' => 'income1050',
+										'autoRenew' => true,
+									],
+								];
+								foreach ($incomeLevels as $income):
+								?>
+								<div class="col-lg-4 col-md-4 mb-3">
+									<div class="card shadow-sm h-100 text-center border-primary">
+										<div class="card-body">
+											<div class="d-flex justify-content-between align-items-center mb-2">
+												<span class="fw-bold fs-4 text-primary"><?= $income['label'] ?></span>
+												<span class="badge bg-secondary"><?= $income['exp'] ?></span>
+											</div>
+											<div class="fw-bold fs-5 text-dark mb-1"><?= $income['amount'] ?></div>
+											<small class="text-muted">Qualified: <span class="fw-bold"><?= $income['qualified'] ?></span></small>
+											<div class="mt-2 mb-2">
+												<button class="btn btn-outline-info btn-sm w-100" data-bs-toggle="modal" data-bs-target="#<?= $income['modalId'] ?>">
+													Details
+												</button>
+											</div>
+											<div class="d-flex justify-content-center align-items-center mt-2">
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox" id="<?= $income['id'] ?>_autoRenew" <?= $income['autoRenew'] ? 'checked' : '' ?> onchange="setRenewUpgrade('<?= $income['label'] ?>_Auto', this.checked ? 'Y' : 'N'); updateAutoRenewLabel('<?= $income['id'] ?>_autoRenewLabel', this.checked)">
+													<label class="form-check-label fw-bold ms-2" for="<?= $income['id'] ?>_autoRenew" id="<?= $income['id'] ?>_autoRenewLabel" style="color: <?= $income['autoRenew'] ? '#198754' : '#dc3545' ?>;">
+														Auto Renew <?= $income['autoRenew'] ? '' : '(inactive)' ?>
+													</label>
 												</div>
-												<div>
-													<small class="fw-bold text-muted">
-														<span class="text-dark">Qualified:</span> <?= $level['qualified'] ?>
-													</small>
+											</div>
+										
+										</div>
+									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="<?= $income['modalId'] ?>" tabindex="-1" aria-labelledby="<?= $income['modalId'] ?>Label" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content rounded-4 shadow-lg border-0">
+												<div class="modal-header bg-gradient-primary text-white rounded-top-4">
+													<h5 class="modal-title fw-bold" id="<?= $income['modalId'] ?>Label">CoopINCOME <?= $income['label'] ?></h5>
+													<button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body p-4 bg-light">
+													<div class="row g-2">
+														<div class="col-12">
+															<div class="d-flex justify-content-between">
+																<span class="fw-bold text-primary"><i class="fa fa-calendar-day me-2"></i>Today Aug 27</span>
+																<span class="fw-bold fs-5 text-dark">$0.00</span>
+															</div>
+														</div>
+														<div class="col-12">
+															<div class="d-flex justify-content-between">
+																<span class="fw-bold text-info"><i class="fa fa-calendar-week me-2"></i>Week of Aug 25</span>
+																<span class="fw-bold fs-5 text-dark">$0.00</span>
+															</div>
+														</div>
+														<div class="col-12">
+															<div class="d-flex justify-content-between">
+																<span class="fw-bold text-warning"><i class="fa fa-calendar-alt me-2"></i>Month of Aug</span>
+																<span class="fw-bold fs-5 text-dark">$0.00</span>
+															</div>
+														</div>
+														<div class="col-12">
+															<div class="d-flex justify-content-between">
+																<span class="fw-bold text-success"><i class="fa fa-calendar me-2"></i>Year 2025</span>
+																<span class="fw-bold fs-5 text-dark"><?= $income['year'] ?></span>
+															</div>
+														</div>
+														<div class="col-12">
+															<div class="d-flex justify-content-between">
+																<span class="fw-bold text-dark"><i class="fa fa-trophy me-2 text-warning"></i>Overall</span>
+																<span class="fw-bold fs-4 text-success"><?= $income['overall'] ?></span>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<?php endforeach; ?>
 								</div>
+								<?php endforeach; ?>
+							</div>
 
 
 
 
 								<!-- Section: 3 Minutes-A-Day Steps -->
-								<div class="row">
+								<div class="row mt-20">
 									<div class="col-lg-12">
 										<div class="card shadow border-0 mb-4">
 											<div class="card-header align-items-center text-white">
@@ -615,6 +594,15 @@ function openModalAST() {
 												<div class="tab-content" id="stepsTabContent">
 													<div class="tab-pane fade show active" id="step1" role="tabpanel">
 														<h3 class="fw-bold mb-3">Coop <span style="color: #7f00ff">3 Minutes-A-Day</span> - Continue to help your team, build your business and grow your income!</h3>
+														<div class="col-lg-12 error-message mb-4">
+															<div class="alert alert-info d-flex align-items-center justify-content-center shadow-lg rounded-3 p-3 fw-bold fs-5">
+																<i class="fa fa-bullhorn fa-2x me-3"></i>
+																<span>
+																	You have not invited any new members today.
+																	<span class="fw-bold text-warning">Get started now!</span>
+																</span>
+															</div>
+														</div>
 														<form class="row g-3">
 															<!-- <div class="col-12">
 																<div class="alert alert-success fw-bold" style="background-color:#f36f22; color: white; font-size: 16px;">
@@ -743,27 +731,35 @@ $(function() {
 						
 
 
-		
+<script>
+function setRenewUpgrade(type, value) {
+	// Example: AJAX call to update auto-renew status (replace URL and logic as needed)
+	$.ajax({
+		url: 'update_auto_renew.php',
+		method: 'POST',
+		data: { type: type, value: value },
+		success: function(response) {
+			// Optionally handle response
+			// For demo, you can log or show a message
+			// console.log('Auto renew updated:', response);
+		},
+		error: function() {
+			// Optionally handle error
+			// console.error('Failed to update auto renew');
+		}
+	});
+}
 
+function updateAutoRenewLabel(labelId, checked) {
+	var label = document.getElementById(labelId);
+	if (checked) {
+		label.textContent = 'Auto Renew';
+		label.style.color = '#198754'; // green
+	} else {
+		label.textContent = ' Inactive';
+		label.style.color = '#dc3545'; // red
+	}
+}
+</script>
 
 <?php require_once('inc/footer.php'); ?>
- <script>
-$(function() {
- 
-    $('.form-check-input[id^="switch_"]').on('change', function() {
-        var checked = $(this).is(':checked');
-        var cardBody = $(this).closest('.card-body');
-        var h5 = cardBody.find('h5.fw-bold');
-        if (checked) {
-            h5.text('You are active in ' + h5.text().replace(/You are (active|inactive) in /, ''));
-            h5.removeClass('text-danger').addClass('text-primary');
-            cardBody.find('.badge').removeClass('bg-danger').addClass('bg-success').text('Renew');
-        } else {
-            h5.text('You are inactive in ' + h5.text().replace(/You are (active|inactive) in /, ''));
-            h5.removeClass('text-primary').addClass('text-danger');
-            cardBody.find('.badge').removeClass('bg-success').addClass('bg-danger').text('Inactive');
-        }
-        
-    });
-});
-</script>

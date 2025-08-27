@@ -4,10 +4,35 @@
 	<body id="kt_app_body" data-kt-app-header-fixed-mobile="true" data-kt-app-toolbar-enabled="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true" class="app-default">
 		<!--begin::Theme mode setup on page load-->
 		 <style>
-            .form-select.form-select-solid{
-                display:none;
-            }
-         </style>
+                                    .team-btn {
+                                        border-radius: 0.5rem !important;
+                                        margin-right: 0 !important;
+                                        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+                                        font-size: 1.1rem;
+                                        box-shadow: 0 2px 8px rgba(30,45,100,0.08);
+                                        background: #fff;
+                                        border: 2px solid #1dbdef;
+                                    }
+                                    .team-btn.active, .team-btn.btn-dark {
+                                        background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                        color: #fff !important;
+                                        border-color: #7f00ff;
+                                        box-shadow: 0 4px 16px rgba(30,45,100,0.12);
+                                    }
+                                    .team-btn:hover, .team-btn:focus {
+                                        background: #1dbdef;
+                                        color: #fff !important;
+                                        border-color: #7f00ff;
+                                    }
+                                    .btn-group.w-100 {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        gap: 8px;
+                                    }
+                                    </style>
+                                            <!-- DataTables CDN CSS -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.3.3/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.bootstrap5.min.css">
 		<!--begin::App-->
 		<div class="d-flex flex-column flex-root app-root" id="kt_app_root">
 			<!--begin::Page-->
@@ -33,413 +58,699 @@
 								<!--begin::Content container--> 
 								<div id="kt_app_content_container" class="app-container container-fluid">
 								
-                           
-
-                    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css">
-                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-                    <div class="card shadow-lg border-0 rounded-lg mb-5">
-                        <div class="card-header bg-gradient-primary text-white py-4">
-                            <h3 class="mb-0">My coopincome Cooperative Team</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="row mb-4">
-                                <div class="col-lg-2 col-md-3 col-6 mb-3">
-                                    <a href="#" class="btn btn-primary w-100 py-3 rounded-3 fw-bold fs-4">
-                                        i6
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-6 mb-3">
-                                    <a href="#" class="btn btn-light w-100 py-3 rounded-3 fw-bold fs-4">
-                                        i22
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-6 mb-3">
-                                    <a href="#" class="btn btn-light w-100 py-3 rounded-3 fw-bold fs-4">
-                                        i53
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-6 mb-3">
-                                    <a href="#" class="btn btn-light w-100 py-3 rounded-3 fw-bold fs-4">
-                                        i110
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-6 mb-3">
-                                    <a href="#" class="btn btn-light w-100 py-3 rounded-3 fw-bold fs-4">
-                                        i525
-                                    </a>
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-6 mb-3">
-                                    <a href="#" class="btn btn-light w-100 py-3 rounded-3 fw-bold fs-4">
-                                        i1050
-                                    </a>
+                 
+                                                <div class="card shadow mb-4">
+                            <div class="card-header align-items-center text-white">
+                                <div class="row w-100">
+                                <div class="btn-group w-100" role="group" aria-label="Team Buttons" style="gap: 8px;">
+                                        <button id="ci6But" class="btn btn-outline-primary fw-bold py-2 team-btn active" type="button" onclick="showTeamTab('ci6')">i6</button>
+                                        <button id="ci22But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci22')">i22</button>
+                                        <button id="ci53But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci53')">i53</button>
+                                        <button id="ci110But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci110')">i110</button>
+                                        <button id="ci525But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci525')">i525</button>
+                                        <button id="ci1050But" class="btn btn-outline-primary fw-bold py-2 team-btn" type="button" onclick="showTeamTab('ci1050')">i1050</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="alert alert-success mb-4">
-                                Welcome <b>Elizabeth</b> to your <b>coopincome</b> Cooperative <b>you have 64 coopincome GBO's</b> in your team!
-                                <br>
-                                This is where you can view how many people are in each of your Crowd Stages. Your Personal coopincome GBO's are in <b>BOLD</b> and you can see their Registration Key. <br>Use this important information effectively to help grow your Active GBO team by <b>turning free into REAL Cash</b>.
-                            </div>
-                            <div class="mb-4">
+                            <div class="card-body">
                                 <div class="mb-4">
-                                    <ul class="nav nav-tabs nav-fill rounded-pill bg-light p-2 shadow-sm" id="coopTabs" role="tablist" style="gap: 8px;">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active rounded-pill fw-bold" id="level1-tab" data-bs-toggle="tab" data-bs-target="#level1" type="button" role="tab" aria-controls="level1" aria-selected="true" style="background: linear-gradient(90deg,#7f00ff,#e100ff); color: #fff;">
-                                                Level 1<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">3 GBOs</span>
-                                            </button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level2-tab" data-bs-toggle="tab" data-bs-target="#level2" type="button" role="tab" aria-controls="level2" aria-selected="false" style="background: linear-gradient(90deg,#00c6ff,#0072ff); color: #fff;">
-                                                Level 2<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">9 GBOs</span>
-                                            </button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level3-tab" data-bs-toggle="tab" data-bs-target="#level3" type="button" role="tab" aria-controls="level3" aria-selected="false" style="background: linear-gradient(90deg,#43cea2,#185a9d); color: #fff;">
-                                                Level 3<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">6 GBOs</span>
-                                            </button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level4-tab" data-bs-toggle="tab" data-bs-target="#level4" type="button" role="tab" aria-controls="level4" aria-selected="false" style="background: linear-gradient(90deg,#f7971e,#ffd200); color: #fff;">
-                                                Level 4<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">8 GBOs</span>
-                                            </button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level5-tab" data-bs-toggle="tab" data-bs-target="#level5" type="button" role="tab" aria-controls="level5" aria-selected="false" style="background: linear-gradient(90deg,#f953c6,#b91d73); color: #fff;">
-                                                Level 5<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">18 GBOs</span>
-                                            </button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level6-tab" data-bs-toggle="tab" data-bs-target="#level6" type="button" role="tab" aria-controls="level6" aria-selected="false" style="background: linear-gradient(90deg,#00f2fe,#4facfe); color: #fff;">
-                                                Level 6<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">20 GBOs</span>
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <style>
-                                    #coopTabs .nav-link {
-                                        border: none !important;
-                                        margin: 0 2px;
-                                        transition: box-shadow 0.2s;
-                                        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-                                    }
-                                    #coopTabs .nav-link.active {
-                                        box-shadow: 0 4px 16px rgba(127,0,255,0.15);
-                                        font-weight: bold;
-                                        outline: none;
-                                    }
-                                    #coopTabs .nav-link:focus {
-                                        outline: none;
-                                        box-shadow: 0 0 0 2px #7f00ff33;
-                                    }
-                                </style>
-                            </div>
-
- <div class="row mb-4">
-                                                <div class="col-sm-12 col-md-6 mb-2 mb-md-0">
-                                                    <div class="dataTables_length" id="datatable_length">
-                                                        <label>Show
-                                                            <select name="datatable_length" aria-controls="datatable" class="form-select form-select-sm d-inline-block w-auto mx-1">
-                                                                <option value="10">10</option>
-                                                                <option value="25">25</option>
-                                                                <option value="50">50</option>
-                                                                <option value="100">100</option>
-                                                            </select>
-                                                            entries
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div id="datatable_filter" class="dataTables_filter text-end">
-                                                        <label>Search:
-                                                            <input type="search" class="form-control form-control-sm d-inline-block w-auto ms-1" placeholder="" aria-controls="datatable" id="customSearchInput">
-                                                        </label>
-                                                    </div>
-                                                </div>
                                  
-                                            </div>
-
-                            
-                            <div class="tab-content" id="coopTabsContent">
-                                <div class="tab-pane fade show active" id="level1" role="tabpanel" aria-labelledby="level1-tab">
-                                    
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered cooperative_team" id="datatable-level1">
-                                            <thead>
-                                                <tr>
-                                                    <th>Position</th>
-                                                    <th>Name</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="font-bold">
-                                                    <td>1</td>
-                                                    <td>Student Loan Fund</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Tenille Littlejohn</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Xenia Marketing</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="coop-info-box mb-4 p-4 rounded-3 shadow text-center bg-white border border-2 border-primary" style="max-width: 600px; margin: 0 auto;">
+                                        <h3 class="fw-bold text-gradient mb-3" style="background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                                            My CoopIncome Cooperative Team
+                                        </h3>
+                                        <div class="mb-2 fs-5">
+                                            <span class="text-success fw-semibold">Welcome, Elizabeth!</span>
+                                            <span class="mx-1">to your</span>
+                                            <span class="text-primary fw-bold">CoopIncome Cooperative</span>
+                                        </div>
+                                        <div class="mb-3">
+                                            <span class="badge bg-gradient fs-5 px-4 py-2 shadow" style="background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%); color: #fff;">
+                                                64 CoopIncome GBO's in your team!
+                                            </span>
+                                        </div>
+                                        <div class="mb-3 fs-6 text-secondary">
+                                            View your <span class="fw-bold text-primary">Crowd Stages</span> and see how many people are in each.<br>
+                                            <span class="fw-bold text-dark">Your Personal CoopIncome GBO's</span> are <span class="fw-bold text-dark">BOLD</span>.<br>
+                                            See their <span class="fw-bold text-warning">Registration Key</span>.
+                                        </div>
+                                        <div class="fs-6 text-success fw-semibold">
+                                            Use this info to grow your Active GBO team and turn free into <span class="fw-bold text-primary">REAL Cash</span>.
+                                        </div>
+                                    </div>
+                                    <style>
+                                    .text-gradient {
+                                        background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                    }
+                                    .bg-gradient {
+                                        background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%) !important;
+                                    }
+                                    </style>
+                      
+                              
+                                    <div class="p_top_30 mt-10">
+                                        <ul class="nav nav-tabs nav-justified mb-3" id="teamInnerTabs" style="background: #f8f9fa; border-radius: 0.5rem;">
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#tab-1" id="action_level_1" data-toggle="tab" class="nav-link active show text-primary fw-bold" onclick="showInnerTab('1')" style="font-size: 1.1rem; border-radius: 0.5rem 0 0 0.5rem;">
+                                                    Level 1<br><span>3 GBOs</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#tab-2" id="action_level_2" data-toggle="tab" class="nav-link   text-success fw-bold" onclick="showInnerTab('2')" style="font-size: 1.1rem;">
+                                                    Level 2<br><span>9 GBOs</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#tab-3" id="action_level_3" data-toggle="tab" class="nav-link text-warning fw-bold" onclick="showInnerTab('3')" style="font-size: 1.1rem;">
+                                                    Level 3<br><span>6 GBOs</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#tab-4" id="action_level_4" data-toggle="tab" class="nav-link text-info fw-bold" onclick="showInnerTab('4')" style="font-size: 1.1rem;">
+                                                    Level 4<br><span>8 GBOs</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#tab-5" id="action_level_5" data-toggle="tab" class="nav-link text-dark fw-bold" onclick="showInnerTab('5')" style="font-size: 1.1rem;">
+                                                    Level 5<br><span>18 GBOs</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item parent-nav-item font-weight-bold">
+                                                <a href="#tab-6" id="action_level_6" data-toggle="tab" class="nav-link text-secondary fw-bold" onclick="showInnerTab('6')" style="font-size: 1.1rem; border-radius: 0 0.5rem 0.5rem 0;">
+                                                    Level 6<br><span>20 GBOs</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- Add tables for each level tab below (example for ci6 team, repeat for other teams as needed) -->
+                                        <div id="teamTable-ci6-1" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci6-1" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zak Lio</td><td>3</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci6-2" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci6-2" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zackary Makcery</td><td>9</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci6-3" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci6-3" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Jane Doe</td><td>6</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci6-4" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci6-4" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>John Smith</td><td>8</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci6-5" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci6-5" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Emily Clark</td><td>18</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci6-6" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci6-6" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Michael Lee</td><td>20</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci22-1" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci22-1" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Apple</td><td>3</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci22-2" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci22-2" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Banana</td><td>9</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci22-3" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci22-3" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Orange</td><td>6</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci22-4" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci22-4" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Grape</td><td>8</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci22-5" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci22-5" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Pineapple</td><td>18</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci22-6" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci22-6" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Watermelon</td><td>20</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci53-1" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci53-1" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zak Lio</td><td>3</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci53-2" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci53-2" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zackary Makcery</td><td>9</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci53-3" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci53-3" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Jane Doe</td><td>6</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci53-4" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci53-4" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>John Smith</td><td>8</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci53-5" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci53-5" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Emily Clark</td><td>18</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci53-6" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci53-6" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Michael Lee</td><td>20</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci110-1" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci110-1" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zak Lio</td><td>3</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci110-2" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci110-2" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zackary Makcery</td><td>9</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci110-3" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci110-3" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Jane Doe</td><td>6</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci110-4" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci110-4" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>John Smith</td><td>8</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci110-5" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci110-5" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Emily Clark</td><td>18</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci110-6" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci110-6" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Michael Lee</td><td>20</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci525-1" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci525-1" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zak Lio</td><td>3</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci525-2" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci525-2" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zackary Makcery</td><td>9</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci525-3" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci525-3" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Jane Doe</td><td>6</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci525-4" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci525-4" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>John Smith</td><td>8</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci525-5" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci525-5" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Emily Clark</td><td>18</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci525-6" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci525-6" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Michael Lee</td><td>20</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci1050-1" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci1050-1" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zak Lio</td><td>3</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci1050-2" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci1050-2" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Zackary Makcery</td><td>9</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci1050-3" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci1050-3" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Jane Doe</td><td>6</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci1050-4" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci1050-4" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>John Smith</td><td>8</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci1050-5" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci1050-5" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Emily Clark</td><td>18</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="teamTable-ci1050-6" class="team-table-inner" style="display:none;">
+                                            <table id="datatable-ci1050-6" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <thead><tr><th>Name</th><th>GBOs</th></tr></thead>
+                                                <tbody>
+                                                    <tr><td>Michael Lee</td><td>20</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <script>
+                                        var currentTeam = 'ci6';
+                                        var currentTab = '1';
+                                        function showInnerTab(tab) {
+                                            currentTab = tab;
+                                            $('#teamInnerTabs .nav-link').removeClass('active show');
+                                            $('#action_level_' + tab).addClass('active show');
+                                            $('.team-table-inner').hide();
+                                            $('#teamTable-' + currentTeam + '-' + tab).show();
+                                        }
+                                        </script>
+                                        <style>
+                                            #teamInnerTabs .nav-link {
+                                                transition: background 0.2s, color 0.2s;
+                                                margin-right: 2px;
+                                                background: #fff;
+                                                border: 1px solid #dee2e6;
+                                            }
+                                            #teamInnerTabs .nav-link.active,
+                                            #teamInnerTabs .nav-link.show {
+                                                background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                                color: #fff !important;
+                                                border-color: #1dbdef #7f00ff #7f00ff #1dbdef;
+                                                box-shadow: 0 2px 8px rgba(30, 45, 100, 0.08);
+                                            }
+                                            #teamInnerTabs .nav-link i {
+                                                font-size: 1rem;
+                                                vertical-align: middle;
+                                            }
+                                        </style>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="level2" role="tabpanel" aria-labelledby="level2-tab">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered cooperative_team" id="datatable-level2">
-                                            <thead>
-                                                <tr>
-                                                    <th>Position</th>
-                                                    <th>Name</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>David Chalk</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5</td>
-                                                    <td>Donald McClendon</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>6</td>
-                                                    <td>Chris asey</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>7</td>
-                                                    <td>JOIN MY BIZ 8288</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>8</td>
-                                                    <td>King Midas</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9</td>
-                                                    <td>PWilliam Fils</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>10</td>
-                                                    <td>Larry Kuntz</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>11</td>
-                                                    <td>Kat Barnes</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>12</td>
-                                                    <td>Sonia McLean</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="level3" role="tabpanel" aria-labelledby="level3-tab">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered cooperative_team" id="datatable-level3">
-                                            <thead>
-                                                <tr>
-                                                    <th>Position</th>
-                                                    <th>Name</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="font-bold">
-                                                    <td>13</td>
-                                                    <td>Frederick Powlett</td>
-                                                </tr>
-                                                <tr class="font-bold">
-                                                    <td>16</td>
-                                                    <td>jacqueline ralph</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>19</td>
-                                                    <td>Scott Smith</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>37</td>
-                                                    <td>Ronald Worsley</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>38</td>
-                                                    <td>Ron Worsley</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>39</td>
-                                                    <td>Robert  Bellot</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="level4" role="tabpanel" aria-labelledby="level4-tab">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered cooperative_team" id="datatable-level4">
-                                            <thead>
-                                                <tr>
-                                                    <th>Position</th>
-                                                    <th>Name</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>40</td>
-                                                    <td>Margaret Howard-Powlett</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>41</td>
-                                                    <td>Tryvonn Powlett in trust Frederick Powlett</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>42</td>
-                                                    <td>Adrian Powlett in trust Frederick Powlett</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>49</td>
-                                                    <td>Caron Mogan</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>115</td>
-                                                    <td>ROBERT WALTHER</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>116</td>
-                                                    <td>jerry richardson</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>117</td>
-                                                    <td>VICTORIA SHEPPARD</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>118</td>
-                                                    <td>Lisa Ross</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="level5" role="tabpanel" aria-labelledby="level5-tab">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered cooperative_team" id="datatable-level5">
-                                            <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr><td>Abigail Powlett in trust Frederick Powlett</td></tr>
-                                                <tr><td>ABUNDANCE 88</td></tr>
-                                                <tr><td>Akeem Callender</td></tr>
-                                                <tr><td>Alexander Powlett in trust Margaret Howard-Powlett</td></tr>
-                                                <tr><td>Alexis Powlett in trust Frederick Powlett</td></tr>
-                                                <tr><td>Amelia  Powlett in trust Margaret Howard-Powlett</td></tr>
-                                                <tr><td>Boingotlo Banda</td></tr>
-                                                <tr><td>Deiann TAYLOR</td></tr>
-                                                <tr><td>Edita Cardeiro</td></tr>
-                                                <tr><td>Emmanuel  Molapo</td></tr>
-                                                <tr><td>farouk mokdad</td></tr>
-                                                <tr><td>Frederick Powlett</td></tr>
-                                                <tr><td>George Newton</td></tr>
-                                                <tr><td>Margaret Howard-Powlett</td></tr>
-                                                <tr><td>Melinda Marker</td></tr>
-                                                <tr><td>Robert Herbert</td></tr>
-                                                <tr><td>Stanley Mgbabu</td></tr>
-                                                <tr><td>Willis Kioko</td></tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="level6" role="tabpanel" aria-labelledby="level6-tab">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered cooperative_team" id="datatable-level6">
-                                            <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr><td>Andre Howard</td></tr>
-                                                <tr><td>Angella Martelly</td></tr>
-                                                <tr><td>BERTRAM HOLDER</td></tr>
-                                                <tr><td>Cherifa  Taileb</td></tr>
-                                                <tr><td>Edwin Lawrence</td></tr>
-                                                <tr><td>Faith Adams in trust Tryvonn Powlett</td></tr>
-                                                <tr><td>Fernando Sealy</td></tr>
-                                                <tr><td>Honor Chase</td></tr>
-                                                <tr><td>Juanita Leacock</td></tr>
-                                                <tr><td>Kevin Curtis</td></tr>
-                                                <tr><td>Louis Ifrene</td></tr>
-                                                <tr><td>Mary Gathege</td></tr>
-                                                <tr><td>Melvin Muthama</td></tr>
-                                                <tr><td>Mohamed Boussetta</td></tr>
-                                                <tr><td>NBO  Investments in trust Frederick Powlett</td></tr>
-                                                <tr><td>R.A.D.M.I In trust Robert Herbert</td></tr>
-                                                <tr><td>Solomon  Dludlu</td></tr>
-                                                <tr><td>Sylvia Chandler</td></tr>
-                                                <tr><td>Trydeijha Carter in trust Tryvonn Powlett</td></tr>
-                                                <tr><td>ÜNAL DANIŞMAN</td></tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-                <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-                <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap4.min.js"></script>
-                <script>
-                // Enable pagination for all DataTables
-                $(document).ready(function() {
-                    // Initialize DataTables for all cooperative_team tables
-                    $('.cooperative_team').DataTable({
-                        "paging": true,
-                        "lengthChange": true,
-                        "searching": true,
-                        "ordering": true,
-                        "info": true,
-                        "autoWidth": false
-                    });
-                });
-                
-                </script>
 
-               <script>
-                                                $(document).ready(function() {
-                                                    // Attach custom search to all DataTables
-                                                    $('#customSearchInput').on('keyup', function() {
-                                                        $('.cooperative_team').each(function() {
-                                                            $(this).DataTable().search($('#customSearchInput').val()).draw();
-                                                        });
-                                                    });
-                                                });
-                                                </script>
+                                <div id="teamTablesArea">
+    <!-- For each team and tab, create a dummy table. Only the selected team and tab's table is shown. -->
+    <div id="teamTable-ci6-all" class="team-table-inner" style="display:block;">
+        <table id="datatable-ci6-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Name</th><th>Total/Active</th></tr></thead>
+            <tbody>
+                <tr><td>Zak Lio</td><td>3 / 0</td></tr>
+                <tr><td>Zackary Makcery</td><td>0 / 0</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci6-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci6-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Name</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Zak Lio</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci6-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci6-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Name</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Zackary Makcery</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci6-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci6-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Name</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Jane Doe</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Repeat for ci22, ci53, ci110, ci525, ci1050 with different dummy data -->
+    <div id="teamTable-ci22-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci22-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Product</th><th>Qty</th><th>Price</th></tr></thead>
+            <tbody>
+                <tr><td>Apple</td><td>10</td><td>$5</td></tr>
+                <tr><td>Banana</td><td>20</td><td>$3</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci22-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci22-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Product</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Apple</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci22-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci22-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Product</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Banana</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci22-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci22-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Product</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Orange</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci53-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci53-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Country</th><th>Capital</th><th>Population</th></tr></thead>
+            <tbody>
+                <tr><td>USA</td><td>Washington</td><td>330M</td></tr>
+                <tr><td>UK</td><td>London</td><td>67M</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci53-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci53-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Country</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>USA</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci53-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci53-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Country</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>UK</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci53-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci53-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Country</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Canada</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci110-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci110-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Course</th><th>Duration</th><th>Fee</th></tr></thead>
+            <tbody>
+                <tr><td>Math</td><td>3 Months</td><td>$100</td></tr>
+                <tr><td>Science</td><td>6 Months</td><td>$200</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci110-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci110-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Course</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Math</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci110-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci110-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Course</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Science</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci110-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci110-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Course</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>English</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci525-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci525-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>City</th><th>State</th><th>Zip</th></tr></thead>
+            <tbody>
+                <tr><td>New York</td><td>NY</td><td>10001</td></tr>
+                <tr><td>Los Angeles</td><td>CA</td><td>90001</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci525-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci525-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>City</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>New York</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci525-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci525-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>City</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Los Angeles</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci525-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci525-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>City</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Chicago</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci1050-all" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci1050-all" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Company</th><th>Industry</th><th>Employees</th></tr></thead>
+            <tbody>
+                <tr><td>Acme Corp</td><td>Tech</td><td>500</td></tr>
+                <tr><td>Beta LLC</td><td>Finance</td><td>200</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci1050-active" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci1050-active" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Company</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Acme Corp</td><td>Active</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci1050-lapsed" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci1050-lapsed" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Company</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Beta LLC</td><td>Lapsed</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="teamTable-ci1050-free" class="team-table-inner" style="display:none;">
+        <table id="datatable-ci1050-free" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+            <thead><tr><th>Company</th><th>Status</th></tr></thead>
+            <tbody>
+                <tr><td>Gamma Inc</td><td>Free</td></tr>
+            </tbody>
+        </table>
+    </div>
+<script>
+var currentTeam = 'ci6';
+var currentTab = 'all';
+$(document).ready(function() {
+    // Set initial active button for .btn-group.w-100
+    $('.btn-group.w-100 > button').removeClass('active btn-dark').addClass('btn-outline-dark');
+    $('#ci6But').addClass('active btn-dark').removeClass('btn-outline-dark');
+});
+function showTeamTab(team) {
+    currentTeam = team;
+    // Remove active class from all .btn-group.w-100 buttons
+    $('.btn-group.w-100 > button').removeClass('active btn-dark').addClass('btn-outline-dark');
+    // Add active class to the selected button
+    $('#ci' + team + 'But').addClass('active btn-dark').removeClass('btn-outline-dark');
+    // Hide all team tables
+    $('.team-table-inner').hide();
+    // Show current tab for selected team
+    $('#teamTable-' + team + '-' + currentTab).show();
+}
+function showInnerTab(tab) {
+    currentTab = tab;
+    // Set active tab
+    $('#teamInnerTabs .nav-link').removeClass('active show');
+    $('#action_level_' + tab).addClass('active show');
+    // Hide all team tables
+    $('.team-table-inner').hide();
+    // Show current team and tab
+    $('#teamTable-' + currentTeam + '-' + tab).show();
+}
+$(document).ready(function() {
+    // Initialize DataTables for all team tables with pagination
+    $('table[id^="datatable-"]').each(function() {
+        if (!$.fn.DataTable.isDataTable(this)) {
+            $(this).DataTable({
+                responsive: true,
+                paging: true,
+                pageLength: 5,
+                lengthChange: true,
+                searching: true,
+                ordering: true,
+                info: true,
+                autoWidth: false,
+                dom: 'lrtip' // Show pagination below table
+            });
+        }
+    });
+    // Show default table
+    $('#teamTable-ci6-1').show();
+});
+</script>
 
-                        </div>
 
 
 
 
-								</div> 
+
+
+								</div>
 								<!--end::Content container-->
 							</div>
 							<!--end::Content-->
 						</div>
 						<!--end::Content wrapper-->
 
-          
+
 
 						
 
  
 		
+
+        <!-- DataTables CDN JS -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.datatables.net/2.3.3/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/2.3.3/js/dataTables.bootstrap5.min.js"></script>
+        <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+        <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('#table-all').DataTable({responsive: true});
+            $('#table-active').DataTable({responsive: true});
+            $('#table-lapsed').DataTable({responsive: true});
+            $('#table-suspended').DataTable({responsive: true});
+            $('#table-cancelled').DataTable({responsive: true});
+        });
+        </script>
+
 <?php require_once('inc/footer.php'); ?>

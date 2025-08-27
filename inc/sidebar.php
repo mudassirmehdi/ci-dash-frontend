@@ -101,7 +101,7 @@
 													<span class="menu-bullet">
 														<i class="ki-outline ki-profile-user"></i>
 													</span>
-													<span class="menu-title">GBO Team</span>
+													<span class="menu-title">CUI Team</span>
 												</a>
 												<!--end:Menu link-->
 											</div>
@@ -155,7 +155,7 @@
 											<span class="menu-icon">
 												<i class="ki-outline ki-profile-user"></i>
 											</span>
-											<span class="menu-title">GBO Team</span> 
+											<span class="menu-title">CUI Team</span> 
                                         </a>
 										<!--end:Menu link--> 
 									</div>

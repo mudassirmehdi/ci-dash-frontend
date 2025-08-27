@@ -301,7 +301,16 @@ $(function() {
                                         gap: 8px;
                                     }
                                     </style>
-                      
+                    <div class="mb-4">
+                        <div class="card border-0 shadow-sm bg-light">
+                            <div class="card-body py-3 px-4">
+                                <h5 class="mb-0 fw-semibold text-primary" style="letter-spacing:0.5px;">
+                                    My Personally Registered CoopIncome™ Members
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                               
                                     <div class="p_top_30 mt-10">
                                         <ul class="nav nav-tabs nav-justified mb-3" id="teamInnerTabs" style="background: #f8f9fa; border-radius: 0.5rem;">
@@ -321,7 +330,7 @@ $(function() {
                                                 </a>
                                             </li>
                                             <li class="nav-item parent-nav-item font-weight-bold">
-                                                <a href="#level_other" id="action_level_other" data-toggle="tab" class="nav-link text-info fw-bold" onclick="showInnerTab('free')" style="font-size: 1.1rem; border-radius: 0 0.5rem 0.5rem 0;">
+                                                <a href="#level_free" id="action_level_free" data-toggle="tab" class="nav-link text-info fw-bold" onclick="showInnerTab('free')" style="font-size: 1.1rem; border-radius: 0 0.5rem 0.5rem 0;">
                                                     <i class="fa fa-gift me-1"></i> Free
                                                 </a>
                                             </li>
