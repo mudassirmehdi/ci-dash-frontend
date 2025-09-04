@@ -32,7 +32,7 @@
 
                                 <div class="row justify-content-center mt-5">
                                     <div class="col-md-6">
-                                        <div class="card shadow-lg border-0 rounded-4">
+                                        <div class="card border rounded-4">
                                             <div class="card-header align-items-center text-center rounded-top-4">
                                                 <h3 class="mb-0"><i class="bi bi-wallet2 me-2"></i>CoopWallet Balance Information</h3>
                                             </div>

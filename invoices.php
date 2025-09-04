@@ -38,7 +38,7 @@
                     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css">
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-                    <div class="card shadow-lg border-0 rounded-lg mb-4">
+                    <div class="card border rounded-lg mb-4">
                         <div class="card-header  text-white d-flex align-items-center justify-content-between">
                             <h5 class="mb-0"><i class="fas fa-file-invoice-dollar mr-2"></i>My Invoices</h5>
                         </div>

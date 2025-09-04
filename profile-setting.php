@@ -122,7 +122,7 @@
 														<!-- Step 1: 2FA -->
 														<!-- Step 1: 2FA as separate card -->
 														<div id="step-2fa" class="mb-4 mt-4">
-															<div class="card shadow-sm mt-10">
+															<div class="card mt-10">
 																<div class="card-header text-center align-items-center">
 																	<h4 class="mb-0">Enter COOPPAY Google Auth Token</h4>
 																</div>
@@ -152,7 +152,7 @@
 														<!-- Step 2: Personal Information -->
 														<div id="step-personal" style="display:none;">
 															
-															<div class="card shadow-sm">
+															<div class="card">
 																<div class="card-header text-center align-items-center">
 																	<h4 class="mb-0">Personal & Account Information</h4>
 																</div>
@@ -220,7 +220,7 @@
 														</div>
 														<!-- Step 3: Enroller -->
 														<div id="step-enroller" style="display:none;">
-															<div class="card shadow-sm">
+															<div class="card">
 																<div class="card-header text-center align-items-center">
 																	<h4 class="mb-0">Enroller Information</h4>
 																</div>
@@ -235,7 +235,7 @@
 														</div>
 														<!-- Step 4: Verify Email -->
 														<div id="step-email" style="display:none;">
-															<div class="card shadow-sm">
+															<div class="card">
 																<div class="card-header text-center align-items-center">
 																	<h4 class="mb-0">Verify Email</h4>
 																</div>
@@ -250,7 +250,7 @@
 														</div>
 														<!-- Step 5: Finish -->
 														<div id="step-finish" style="display:none;">
-															<div class="card shadow-sm text-center mb-4">
+															<div class="card text-center mb-4">
 																<div class="card-body">
 																	<h2 class="text-success mb-3">Success!</h2>
 																</div>

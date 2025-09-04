@@ -29,7 +29,7 @@
 								<!--begin::Content container--> 
 								<div id="kt_app_content_container" class="app-container container-fluid">
 								
-                                <div class="card shadow-lg border-0 mb-5" style="max-width: 700px; margin: auto;">
+                                <div class="card border mb-5" style="max-width: 700px; margin: auto;">
                                     <div class="card-header align-items-center text-center">
                                         <h5 class="mb-0">Add Funds To My Digital Wallet</h5>
                                     </div>

@@ -11,16 +11,16 @@
                                         font-size: 1.1rem;
                                         box-shadow: 0 2px 8px rgba(30,45,100,0.08);
                                         background: #fff;
-                                        border: 2px solid #1dbdef;
+                                        border: 2px solid #0d6efd;;
                                     }
                                     .team-btn.active, .team-btn.btn-dark {
-                                        background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                        background: #0d6efd !important;
                                         color: #fff !important;
                                         border-color: #7f00ff;
                                         box-shadow: 0 4px 16px rgba(30,45,100,0.12);
                                     }
                                     .team-btn:hover, .team-btn:focus {
-                                        background: #1dbdef;
+                                        background: #0d6efd;
                                         color: #fff !important;
                                         border-color: #7f00ff;
                                     }
@@ -59,7 +59,7 @@
 								<div id="kt_app_content_container" class="app-container container-fluid">
 								
                  
-                                                <div class="card shadow mb-4">
+                                                <div class="card  mb-4">
                             <div class="card-header align-items-center text-white">
                                 <div class="row w-100">
                                 <div class="btn-group w-100" role="group" aria-label="Team Buttons" style="gap: 8px;">
@@ -75,8 +75,8 @@
                             <div class="card-body">
                                 <div class="mb-4">
                                  
-                                    <div class="coop-info-box mb-4 p-4 rounded-3 shadow text-center bg-white border border-2 border-primary" style="max-width: 600px; margin: 0 auto;">
-                                        <h3 class="fw-bold text-gradient mb-3" style="background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                                    <div class="coop-info-box mb-4 p-4 rounded-3  text-center bg-white border border-2 border-primary" style="max-width: 600px; margin: 0 auto;">
+                                        <h3 class="fw-bold text-primary mb-3">
                                             My CoopIncome Cooperative Team
                                         </h3>
                                         <div class="mb-2 fs-5">
@@ -85,7 +85,7 @@
                                             <span class="text-primary fw-bold">CoopIncome Cooperative</span>
                                         </div>
                                         <div class="mb-3">
-                                            <span class="badge bg-gradient fs-5 px-4 py-2 shadow" style="background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%); color: #fff;">
+                                            <span class="badge bg-primary fs-5 px-4 py-2  text-white">
                                                 64 CoopIncome GBO's in your team!
                                             </span>
                                         </div>
@@ -100,7 +100,7 @@
                                     </div>
                                     <style>
                                     .text-gradient {
-                                        background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                        background: #0d6efd !important;
                                         -webkit-background-clip: text;
                                         -webkit-text-fill-color: transparent;
                                     }
@@ -452,10 +452,10 @@
                                             }
                                             #teamInnerTabs .nav-link.active,
                                             #teamInnerTabs .nav-link.show {
-                                                background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                                background: #0d6efd !important;
                                                 color: #fff !important;
-                                                border-color: #1dbdef #7f00ff #7f00ff #1dbdef;
-                                                box-shadow: 0 2px 8px rgba(30, 45, 100, 0.08);
+                                
+                                                
                                             }
                                             #teamInnerTabs .nav-link i {
                                                 font-size: 1rem;

@@ -33,13 +33,13 @@
 
                         <div class="row justify-content-center">
                             <div class="col-lg-7 col-md-10">
-                                <div class="card shadow-lg border-0 mb-5">
+                                <div class="card border mb-5">
                                     <div class="card-header align-items-center text-center py-4">
                                         <h2 class="mb-0 fw-bold">Transfer Funds</h2>
                                     </div>
                                     <div class="card-body p-4">
                                         <div class="mb-5">
-                                            <div class="card border-info shadow-sm">
+                                            <div class="card">
                                                 <div class="card-header bg-info bg-gradient align-items-center text-white text-center py-3">
                                                     <h5 class="mb-0 fw-semibold text-white">Verify Google Authenticator Token</h5>
                                                 </div>
@@ -60,9 +60,9 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <div class="card border-secondary shadow-sm">
+                                            <div class="card">
                                                 <div class="card-header align-items-center bg-secondary bg-gradient text-white py-3">
-                                                    <h6 class="mb-0 fw-semibold"><i class="bi bi-question-circle me-2"></i>How to set up, generate and validate Google Auth Token?</h6>
+                                                    <h6 class="mb-0 fw-semibold text-white"><i class="bi bi-question-circle me-2"></i>How to set up, generate and validate Google Auth Token?</h6>
                                                 </div>
                                                 <div class="card-body">
                                                     <ol class="list-group list-group-numbered">

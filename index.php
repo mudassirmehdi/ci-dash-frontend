@@ -62,7 +62,7 @@
                                         <section class="container">
                                             <div class="row justify-content-center">
                                                 <div class="col-md-8 col-lg-8">
-                                                    <div class="card shadow-sm mb-4">
+                                                    <div class="card  mb-4">
                                                         <div class="card-body p-4">
                                                             <div id="errorMessageAST" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
                                                             <div id="successMessageAST" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
@@ -71,32 +71,32 @@
                                                                 <label for="AST_donor_key" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
                                                                     Recipient Registration Key
                                                                 </label>
-                                                                <div class="input-group">
+                                                                <div class="input-group mb-5">
                                                                     <span class="input-group-text"><i class="fa fa-user"></i></span>
                                                                     <input name="AST_donor_key" maxlength="10" class="form-control" id="AST_donor_key" placeholder="Enter Recipient Registration Key" type="text" required>
                                                                     <div class="invalid-feedback">Please enter right recipient registration key.</div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row g-2 mb-3">
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(1)" id="butAST1" style="background-color: #1dbdef !important; color: white; font-weight: bold">Activate Income6</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(2)" id="butAST3" style="background-color: #7f00ff !important; color: white; font-weight: bold">Activate income22</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(3)" id="butAST6" style="background-color: #DA291C !important; color: white; font-weight: bold">Activate Income53</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(4)" id="butAST100" style="background-color: #ffc72c !important; color: white; font-weight: bold">Activate income110</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(5)" id="butAST500" style="background-color: #3DDC84 !important; color: white; font-weight: bold">Activate income525</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(6)" id="butAST1000" style="background-color: #e6c200 !important; color: white; font-weight: bold">Activate income1050</button>
-                                                                </div>
-                                                            </div>
+															<div class="row g-2 mb-3">
+																<div class="col-12 col-md-6">
+																	<button type="button" class="btn btn-primary w-100 mb-2 bg-info text-white fw-bold" onclick="activateSingleToken(1)" id="butAST1">Activate Income6</button>
+																</div>
+																<div class="col-12 col-md-6">
+																	<button type="button" class="btn btn-primary w-100 mb-2 bg-purple text-white fw-bold" onclick="activateSingleToken(2)" id="butAST3">Activate income22</button>
+																</div>
+																<div class="col-12 col-md-6">
+																	<button type="button" class="btn btn-primary w-100 mb-2 bg-danger text-white fw-bold" onclick="activateSingleToken(3)" id="butAST6">Activate Income53</button>
+																</div>
+																<div class="col-12 col-md-6">
+																	<button type="button" class="btn btn-primary w-100 mb-2 bg-warning text-white fw-bold" onclick="activateSingleToken(4)" id="butAST100">Activate income110</button>
+																</div>
+																<div class="col-12 col-md-6">
+																	<button type="button" class="btn btn-primary w-100 mb-2 bg-success text-white fw-bold" onclick="activateSingleToken(5)" id="butAST500">Activate income525</button>
+																</div>
+																<div class="col-12 col-md-6">
+																	<button type="button" class="btn btn-primary w-100 mb-2 bg-yellow text-white fw-bold" onclick="activateSingleToken(6)" id="butAST1000">Activate income1050</button>
+																</div>
+															</div>
                                                             <button type="button" class="btn btn-dark w-100" id="cenAST" data-bs-dismiss="modal" aria-label="Close">Close</button>
                                                         </div>
                                                     </div>
@@ -119,7 +119,7 @@
                                         <section class="container">
                                             <div class="row justify-content-center">
                                                 <div class="col-md-8 col-lg-8">
-                                                    <div class="card shadow-sm mb-4">
+                                                    <div class="card mb-4">
                                                         <div class="card-body p-4">
                                                             <div id="errorMessageRenew" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
                                                             <div id="successMessageRenew" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
@@ -180,7 +180,7 @@ function openModalAST() {
                 <section class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-lg-8">
-                            <div class="card shadow-sm mb-4">
+                            <div class="card mb-4">
                                 <div class="card-body p-4">
                                     <div id="errorMessageRegister" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
                                     <div id="successMessageRegister" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
@@ -227,7 +227,7 @@ function openModalAST() {
 </div>
 
 
-                        <div class="card shadow mb-4">
+                        <div class="card mb-4">
                             <div class="card-header align-items-center text-white">
                                 <div class="row w-100">
                                     <div class="col-md-4 mb-2 mb-md-0">
@@ -247,7 +247,7 @@ function openModalAST() {
 								<!-- Section: We Prove It Free -->
 								<div class="row mb-4">
 									<div class="col-lg-10">
-										<h1 class="fw-bold text-start" style="color: #f26f22;">We Prove It Free - (Non-Redeemable)</h1>
+										<h1 class="fw-bold text-start" style="color: #131313;">We Prove It Free - (Non-Redeemable)</h1>
 									</div>
 								</div>
 								<div class="row g-3 mb-4">
@@ -264,7 +264,7 @@ function openModalAST() {
 											'week'=>'$1.6775',
 											'month'=>'$2783.4125',
 											'year'=>'$2866.5675',
-											'overall'=>'$2866.5675'
+											'overall'=>'$2866.567'
 										],
 										[
 											'id'=>'ignite22',
@@ -305,7 +305,7 @@ function openModalAST() {
 										[
 											'id'=>'ignite525',
 											'label'=>'i525',
-											'amount'=>'$286,656.75',
+											'amount'=>'$286,656.7',
 											'modal'=>'ignite525',
 											'title'=>'CoopIgnite 525 Potential Royalties',
 											'today'=>'$218.6775',
@@ -317,7 +317,7 @@ function openModalAST() {
 										[
 											'id'=>'ignite1050',
 											'label'=>'i1050',
-											'amount'=>'$573,313.50',
+											'amount'=>'$573,313.5',
 											'modal'=>'ignite1050',
 											'title'=>'CoopIgnite 1050 Potential Royalties',
 											'today'=>'$437.6775',
@@ -329,11 +329,11 @@ function openModalAST() {
 									];
 									foreach($ignites as $ignite): ?>
 									<div class="col-md-4 col-lg-2">
-										<div class="card border-primary shadow h-100">
+										<div class="card  h-100">
 											<a href="#" data-bs-toggle="modal" data-bs-target="#<?= $ignite['modal'] ?>" class="text-decoration-none">
 												<div class="card-body text-center">
 													<div class="fw-bold fs-4 text-primary"><?= $ignite['label'] ?></div>
-													<div class="fw-bold fs-5 text-dark"><?= $ignite['amount'] ?></div>
+													<div class="fw-bold fs-3 text-dark"><?= $ignite['amount'] ?></div>
 												</div>
 											</a>
 										</div>
@@ -341,14 +341,14 @@ function openModalAST() {
 									<!-- Modal for Ignite -->
 									<div class="modal fade" id="<?= $ignite['modal'] ?>" tabindex="-1" role="dialog" aria-labelledby="<?= $ignite['modal'] ?>Label" aria-hidden="true">
 										<div class="modal-dialog modal-dialog-centered" role="document">
-											<div class="modal-content rounded-4 shadow-lg border-0">
+											<div class="modal-content rounded-4 border-0">
 												<div class="modal-header bg-gradient-primary text-white rounded-top-4">
 													<div class="d-flex align-items-center w-100">
 														<div class="me-2">
 															<i class="fa fa-fire fs-3 text-warning"></i>
 														</div>
 														<h5 class="modal-title flex-grow-1" style="font-size: 18px; font-weight: bold;" id="<?= $ignite['modal'] ?>Label">
-															<?= $ignite['title'] ?> <span class="badge bg-danger ms-2">(Non-Redeemable)</span>
+															<?= $ignite['title'] ?> <span class="badge bg-danger ms-2 text-white">(Non-Redeemable)</span>
 														</h5>
 														<button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
 													</div>
@@ -356,7 +356,7 @@ function openModalAST() {
 												<div class="modal-body p-4 bg-light">
 													<div class="row g-3">
 														<div class="col-12">
-															<div class="card border-0 shadow-sm mb-2">
+															<div class="card border-0  mb-2">
 																<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
 																	<span class="fw-bold text-primary"><i class="fa fa-calendar-day me-2"></i>Today Aug 25</span>
 																	<span class="fw-bold fs-5 text-dark"><?= $ignite['today'] ?></span>
@@ -364,7 +364,7 @@ function openModalAST() {
 															</div>
 														</div>
 														<div class="col-12">
-															<div class="card border-0 shadow-sm mb-2">
+															<div class="card border-0  mb-2">
 																<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
 																	<span class="fw-bold text-info"><i class="fa fa-calendar-week me-2"></i>Week of Aug 25</span>
 																	<span class="fw-bold fs-5 text-dark"><?= $ignite['week'] ?></span>
@@ -372,7 +372,7 @@ function openModalAST() {
 															</div>
 														</div>
 														<div class="col-12">
-															<div class="card border-0 shadow-sm mb-2">
+															<div class="card border-0  mb-2">
 																<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
 																	<span class="fw-bold text-warning"><i class="fa fa-calendar-alt me-2"></i>Month of Aug</span>
 																	<span class="fw-bold fs-5 text-dark"><?= $ignite['month'] ?></span>
@@ -380,7 +380,7 @@ function openModalAST() {
 															</div>
 														</div>
 														<div class="col-12">
-															<div class="card border-0 shadow-sm mb-2">
+															<div class="card border-0  mb-2">
 																<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
 																	<span class="fw-bold text-success"><i class="fa fa-calendar me-2"></i>Year 2025</span>
 																	<span class="fw-bold fs-5 text-dark"><?= $ignite['year'] ?></span>
@@ -388,7 +388,7 @@ function openModalAST() {
 															</div>
 														</div>
 														<div class="col-12">
-															<div class="card border-0 shadow-sm mb-2 bg-gradient-info">
+															<div class="card border-0  mb-2 bg-gradient-info">
 																<div class="card-body py-2 px-3 d-flex justify-content-between align-items-center">
 																	<span class="fw-bold text-dark"><i class="fa fa-trophy me-2 text-warning"></i>Overall</span>
 																	<span class="fw-bold fs-4 text-success currency-field"><?= $ignite['overall'] ?></span>
@@ -405,8 +405,8 @@ function openModalAST() {
 								<!-- Section: CoopINCOME -->
 							<div class="row align-items-center mb-4 user_acc_info">
 								<div class="col-md-6">
-									<h1 class="fw-bold text-start mb-0" style="color: #7f00ff;">
-										 CoopINCOME <span class="badge bg-success ms-2">(Real Earning)</span>
+									<h1 class="fw-bold text-start mb-0" style="color: #131313;">
+										 CoopINCOME <span class="badge  ms-2">(Real Earning)</span>
 									</h1>
 								</div>
 								<div class="col-md-6 text-end">
@@ -496,16 +496,16 @@ function openModalAST() {
 								foreach ($incomeLevels as $income):
 								?>
 								<div class="col-lg-4 col-md-4 mb-3">
-									<div class="card shadow-sm h-100 text-center border-primary">
+									<div class="card h-100 text-center">
 										<div class="card-body">
 											<div class="d-flex justify-content-between align-items-center mb-2">
 												<span class="fw-bold fs-4 text-primary"><?= $income['label'] ?></span>
-												<span class="badge bg-secondary"><?= $income['exp'] ?></span>
+												<span class="badge bg-secondary text-white"><?= $income['exp'] ?></span>
 											</div>
-											<div class="fw-bold fs-5 text-dark mb-1"><?= $income['amount'] ?></div>
+											<div class="fw-bold fs-3 text-dark mb-1"><?= $income['amount'] ?></div>
 											<small class="text-muted">Qualified: <span class="fw-bold"><?= $income['qualified'] ?></span></small>
 											<div class="mt-2 mb-2">
-												<button class="btn btn-outline-info btn-sm w-100" data-bs-toggle="modal" data-bs-target="#<?= $income['modalId'] ?>">
+												<button type="button" class="btn btn-info btn-sm w-100" data-bs-toggle="modal" data-bs-target="#<?= $income['modalId'] ?>">
 													Details
 												</button>
 											</div>
@@ -523,7 +523,7 @@ function openModalAST() {
 									<!-- Modal -->
 									<div class="modal fade" id="<?= $income['modalId'] ?>" tabindex="-1" aria-labelledby="<?= $income['modalId'] ?>Label" aria-hidden="true">
 										<div class="modal-dialog modal-dialog-centered">
-											<div class="modal-content rounded-4 shadow-lg border-0">
+											<div class="modal-content rounded-4 border-0">
 												<div class="modal-header bg-gradient-primary text-white rounded-top-4">
 													<h5 class="modal-title fw-bold" id="<?= $income['modalId'] ?>Label">CoopINCOME <?= $income['label'] ?></h5>
 													<button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -575,27 +575,27 @@ function openModalAST() {
 								<!-- Section: 3 Minutes-A-Day Steps -->
 								<div class="row mt-20">
 									<div class="col-lg-12">
-										<div class="card shadow border-0 mb-4">
-											<div class="card-header align-items-center text-white">
+										<div class=" border-0 mb-4">
+											<div class=" align-items-center text-white mb-5">
 												<h2 class="fw-bold mb-0">Your coopincome <span style="color: #7f00ff">3 Minutes-A-Day</span></h2>
 											</div>
-											<div class="card-body">
+											<div class="">
 												<ul class="nav nav-pills mb-10" id="stepsTab" role="tablist" >
 													<li class="nav-item" role="presentation">
 														<button class="nav-link active fw-bold" id="step1-tab" data-bs-toggle="pill" data-bs-target="#step1" type="button" role="tab">Step 1 - INVITE</button>
 													</li>
 													<li class="nav-item" role="presentation">
-														<button class="nav-link fw-bold" id="step2-tab" data-bs-toggle="pill" data-bs-target="#step2" type="button" role="tab">Step 2 - SHARE</button>
+														<button class="nav-link fw-bold" id="step2-tab" data-bs-toggle="pill" data-bs-target="#step2" type="button" role="tab" disabled>Step 2 - SHARE</button>
 													</li>
 													<li class="nav-item" role="presentation">
-														<button class="nav-link fw-bold" id="step3-tab" data-bs-toggle="pill" data-bs-target="#step3" type="button" role="tab">Step 3 - FOLLOW-UP</button>
+														<button class="nav-link fw-bold" id="step3-tab" data-bs-toggle="pill" data-bs-target="#step3" type="button" role="tab" disabled>Step 3 - FOLLOW-UP</button>
 													</li>
 												</ul>
 												<div class="tab-content" id="stepsTabContent">
 													<div class="tab-pane fade show active" id="step1" role="tabpanel">
 														<h3 class="fw-bold mb-3">Coop <span style="color: #7f00ff">3 Minutes-A-Day</span> - Continue to help your team, build your business and grow your income!</h3>
 														<div class="col-lg-12 error-message mb-4">
-															<div class="alert alert-info d-flex align-items-center justify-content-center shadow-lg rounded-3 p-3 fw-bold fs-5">
+															<div class="alert alert-info d-flex align-items-center justify-content-center  rounded-3 p-3 fw-bold fs-5">
 																<i class="fa fa-bullhorn fa-2x me-3"></i>
 																<span>
 																	You have not invited any new members today.
@@ -611,9 +611,9 @@ function openModalAST() {
 															</div> -->
 															<?php for($i=1;$i<=3;$i++): ?>
 															<div class="col-md-4">
-																<div class="card border-info mb-3">
-																	<div class="card-header align-items-center bg-info text-white">
-																		<h5 class="mb-0"><i class="fa fa-user"></i> #<?= $i ?></h5>
+																<div class="card mb-3">
+																	<div class="card-header align-items-center bg-primary text-white">
+																		<h5 class="mb-0 text-white"><i class="fa fa-user"></i> #<?= $i ?></h5>
 																	</div>
 																	<div class="card-body">
 																		<div class="mb-2">
@@ -649,7 +649,7 @@ function openModalAST() {
 																</div>
 															</div>
 															<div class="col-12 text-end">
-																<button type="button" class="btn btn-primary fw-bold invite-submit">INVITE!</button>
+																<button type="button" class="btn btn-primary fw-bold invite-submit" required>INVITE!</button>
 															</div>
 														</form>
 													</div>

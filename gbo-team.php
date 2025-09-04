@@ -62,7 +62,7 @@
                                         <section class="container">
                                             <div class="row justify-content-center">
                                                 <div class="col-md-8 col-lg-8">
-                                                    <div class="card shadow-sm mb-4">
+                                                    <div class="card mb-4">
                                                         <div class="card-body p-4">
                                                             <div id="errorMessageAST" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
                                                             <div id="successMessageAST" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
@@ -119,7 +119,7 @@
                                         <section class="container">
                                             <div class="row justify-content-center">
                                                 <div class="col-md-8 col-lg-8">
-                                                    <div class="card shadow-sm mb-4">
+                                                    <div class="card mb-4">
                                                         <div class="card-body p-4">
                                                             <div id="errorMessageRenew" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
                                                             <div id="successMessageRenew" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
@@ -180,7 +180,7 @@ function openModalAST() {
                 <section class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-lg-8">
-                            <div class="card shadow-sm mb-4">
+                            <div class="card mb-4">
                                 <div class="card-body p-4">
                                     <div id="errorMessageRegister" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
                                     <div id="successMessageRegister" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
@@ -249,7 +249,7 @@ $(function() {
 });
 </script>
 
-                        <div class="card shadow mb-4">
+                        <div class="card mb-4">
                             <div class="card-header align-items-center text-white">
                                 <div class="row w-100">
                                     <div class="col-md-4 mb-2 mb-md-0">
@@ -285,7 +285,7 @@ $(function() {
                                         border: 2px solid #1dbdef;
                                     }
                                     .team-btn.active, .team-btn.btn-dark {
-                                        background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                        background: #0d6efd;
                                         color: #fff !important;
                                         border-color: #7f00ff;
                                         box-shadow: 0 4px 16px rgba(30,45,100,0.12);
@@ -302,7 +302,7 @@ $(function() {
                                     }
                                     </style>
                     <div class="mb-4">
-                        <div class="card border-0 shadow-sm bg-light">
+                        <div class="card border-0 bg-light">
                             <div class="card-body py-3 px-4">
                                 <h5 class="mb-0 fw-semibold text-primary" style="letter-spacing:0.5px;">
                                     My Personally Registered CoopIncome™ Members
@@ -344,9 +344,9 @@ $(function() {
                                             }
                                             #teamInnerTabs .nav-link.active,
                                             #teamInnerTabs .nav-link.show {
-                                                background: linear-gradient(90deg, #1dbdef 0%, #7f00ff 100%);
+                                                background: #0d6efd;
                                                 color: #fff !important;
-                                                border-color: #1dbdef #7f00ff #7f00ff #1dbdef;
+                                               
                                                 box-shadow: 0 2px 8px rgba(30, 45, 100, 0.08);
                                             }
                                             #teamInnerTabs .nav-link i {

@@ -29,7 +29,7 @@
 								<!--begin::Content container--> 
 								<div id="kt_app_content_container" class="app-container container-fluid">
 								
-                                <div class="card shadow-lg mb-5">
+                                <div class="card  mb-5">
                                     <div class="card-header text-white align-items-center">
                                         <h5 class="mb-0">Buy Tokens</h5>
                                     </div>

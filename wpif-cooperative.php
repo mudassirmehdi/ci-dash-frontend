@@ -38,75 +38,59 @@
                     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css">
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-                    <div class="card shadow-lg border-0 rounded-lg mb-5">
+                    <div class="card  border rounded-lg mb-5">
                         <div class="card-header bg-gradient-primary text-white py-4">
                             <h3 class="mb-0">My Free CoopIncome Cooperative Team</h3>
                         </div>
                         <div class="card-body">
-                          
-                            <div class="alert mb-4" style="background: linear-gradient(90deg,#7f00ff,#e100ff); color: #fff; border: none;">
+
+                            <div class="alert mb-4 bg-primary text-white" >
                                 Welcome <b>Elizabeth</b> to your <b>coopincome</b> Cooperative <b>you have 383 coopincome GBO's</b> in your team!
                                 <br>
                                 This is where you can view how many people are in each of your Crowd Stages. Your Personal coopincome GBO's are in <b>BOLD</b> and you can see their Registration Key. <br>Use this important information effectively to help grow your Active GBO team by <b>turning free into REAL Cash</b>.
                             </div>
                             <div class="mb-4">
                                 <div class="mb-4">
-                                    <ul class="nav nav-tabs nav-fill rounded-pill bg-light p-2 shadow-sm" id="coopTabs" role="tablist" style="gap: 8px;">
+                                    <ul class="nav nav-tabs nav-fill rounded-pill bg-light p-2" id="coopTabs" role="tablist" style="gap: 8px;">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active rounded-pill fw-bold" id="level1-tab" data-bs-toggle="tab" data-bs-target="#level1" type="button" role="tab" aria-controls="level1" aria-selected="true" style="background: linear-gradient(90deg,#ff6a00,#ee0979); color: #fff;">
+                                            <button class="nav-link active rounded-pill fw-bold bg-primary text-white" id="level1-tab" data-bs-toggle="tab" data-bs-target="#level1" type="button" role="tab" aria-controls="level1" aria-selected="true">
                                                 Level 1<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">3 GBOs</span>
+                                                <span class="badge bg-white text-primary" style="font-size: 1rem;">3 GBOs</span>
                                             </button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level2-tab" data-bs-toggle="tab" data-bs-target="#level2" type="button" role="tab" aria-controls="level2" aria-selected="false" style="background: linear-gradient(90deg,#11998e,#38ef7d); color: #fff;">
+                                            <button class="nav-link rounded-pill fw-bold bg-success text-white" id="level2-tab" data-bs-toggle="tab" data-bs-target="#level2" type="button" role="tab" aria-controls="level2" aria-selected="false">
                                                 Level 2<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">9 GBOs</span>
+                                                <span class="badge bg-white text-success" style="font-size: 1rem;">9 GBOs</span>
                                             </button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level3-tab" data-bs-toggle="tab" data-bs-target="#level3" type="button" role="tab" aria-controls="level3" aria-selected="false" style="background: linear-gradient(90deg,#fc5c7d,#6a82fb); color: #fff;">
+                                            <button class="nav-link rounded-pill fw-bold bg-info text-white" id="level3-tab" data-bs-toggle="tab" data-bs-target="#level3" type="button" role="tab" aria-controls="level3" aria-selected="false">
                                                 Level 3<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">27 GBOs</span>
+                                                <span class="badge bg-white text-info" style="font-size: 1rem;">27 GBOs</span>
                                             </button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level4-tab" data-bs-toggle="tab" data-bs-target="#level4" type="button" role="tab" aria-controls="level4" aria-selected="false" style="background: linear-gradient(90deg,#f7971e,#ffd200); color: #fff;">
+                                            <button class="nav-link rounded-pill fw-bold bg-warning text-dark" id="level4-tab" data-bs-toggle="tab" data-bs-target="#level4" type="button" role="tab" aria-controls="level4" aria-selected="false">
                                                 Level 4<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">81 GBOs</span>
+                                                <span class="badge bg-white text-warning" style="font-size: 1rem;">81 GBOs</span>
                                             </button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level5-tab" data-bs-toggle="tab" data-bs-target="#level5" type="button" role="tab" aria-controls="level5" aria-selected="false" style="background: linear-gradient(90deg,#00c3ff,#ffff1c); color: #fff;">
+                                            <button class="nav-link rounded-pill fw-bold bg-secondary text-white" id="level5-tab" data-bs-toggle="tab" data-bs-target="#level5" type="button" role="tab" aria-controls="level5" aria-selected="false">
                                                 Level 5<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">153 GBOs</span>
+                                                <span class="badge bg-white text-secondary" style="font-size: 1rem;">153 GBOs</span>
                                             </button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link rounded-pill fw-bold" id="level6-tab" data-bs-toggle="tab" data-bs-target="#level6" type="button" role="tab" aria-controls="level6" aria-selected="false" style="background: linear-gradient(90deg,#f7797d,#FBD786); color: #fff;">
+                                            <button class="nav-link rounded-pill fw-bold bg-danger text-white" id="level6-tab" data-bs-toggle="tab" data-bs-target="#level6" type="button" role="tab" aria-controls="level6" aria-selected="false">
                                                 Level 6<br>
-                                                <span class="badge bg-white text-primary shadow-sm" style="font-size: 1rem;">110 GBOs</span>
+                                                <span class="badge bg-white text-danger" style="font-size: 1rem;">110 GBOs</span>
                                             </button>
                                         </li>
                                     </ul>
                                 </div>
-                                <style>
-                                    #coopTabs .nav-link {
-                                        border: none !important;
-                                        margin: 0 2px;
-                                        transition: box-shadow 0.2s;
-                                        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-                                    }
-                                    #coopTabs .nav-link.active {
-                                        box-shadow: 0 4px 16px rgba(127,0,255,0.15);
-                                        font-weight: bold;
-                                        outline: none;
-                                    }
-                                    #coopTabs .nav-link:focus {
-                                        outline: none;
-                                        box-shadow: 0 0 0 2px #7f00ff33;
-                                    }
-                                </style>
+
                             </div>
 
  <div class="row mb-4">

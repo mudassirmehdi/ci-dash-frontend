@@ -118,7 +118,7 @@
 																			<label class="form-label font-weight-bold mr-3 mb-2">Auto Upgrade/Renew to <?= $label ?>:</label>
 																			<div class="form-check form-switch form-check-custom form-check-solid d-flex align-items-center">
 																				<input class="form-check-input" type="checkbox" value="" id="flexSwitchChecked-<?= $key ?>" checked="checked" onchange="document.getElementById('status-<?= $key ?>').textContent = this.checked ? '(enabled)' : '(disabled)'; document.getElementById('status-<?= $key ?>').style.color = this.checked ? 'green' : 'red';" />
-																				<span id="status-<?= $key ?>" style="color: green; margin-left: 8px;">(enabled)</span>
+																				<span id="status-<?= $key ?>" style="color: green; margin-left: 48px;">(enabled)</span>
 																			</div>
 																		</div>
 																		<?php endforeach; ?>
@@ -130,7 +130,7 @@
 																			<div class="form-check form-switch form-check-custom form-check-solid d-flex align-items-center">
 																				<input class="form-check-input" type="checkbox" value="" id="flexSwitchChecked-payitforward" checked="checked"
 																					onchange="document.getElementById('status-payitforward').textContent = this.checked ? '(enabled)' : '(disabled)'; document.getElementById('status-payitforward').style.color = this.checked ? 'green' : 'red';">
-																				<span id="status-payitforward" style="color: green; margin-left: 8px;">(enabled)</span>
+																				<span id="status-payitforward" style="color: green; margin-left: 48px;">(enabled)</span>
 																			</div> 
 																		</div>
 																	</div>

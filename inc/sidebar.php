@@ -18,7 +18,7 @@
 							</div>
 							<!--end::Brand--> 
 
-							<div class="sidebar-countdown d-flex flex-stack">
+							<!-- <div class="sidebar-countdown d-flex flex-stack">
 								<div id="countdown">
 									<div>
 										<span id="days"></span>
@@ -37,7 +37,7 @@
 										<div class="label">Seconds</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<!--end::Header-->
 						<!--begin::Navs-->
@@ -68,7 +68,7 @@
 
 	<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-3">
 										<!--begin:Menu link-->
-										<span class="menu-link bg-gray-500">
+										<span class="menu-link">
 											<span class="menu-icon">
 												<i class="ki-duotone ki-gift fs-2">
 													<span class="path1"></span>

@@ -39,278 +39,11 @@
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
-                       
-                        <!-- Pay It Forward Modal -->
-                        <div class="modal fade" id="payItForwardModal" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header" style="text-align: center">
-                                        <h4 class="modal-title" id="activateSingleTokenLabel">Pay It Forward for Free Member</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <section class="container">
-                                            <div class="row justify-content-center">
-                                                <div class="col-md-8 col-lg-8">
-                                                    <div class="card shadow-sm mb-4">
-                                                        <div class="card-body p-4">
-                                                            <div id="errorMessageAST" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
-                                                            <div id="successMessageAST" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
-                                                            <h4 class="mb-4 text-center" style="color: #5A2119">Pay It Forward Activation</h4>
-                                                            <div class="form-group mb-3">
-                                                                <label for="AST_donor_key" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
-                                                                    Recipient Registration Key
-                                                                </label>
-                                                                <div class="input-group">
-                                                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                                                    <input name="AST_donor_key" maxlength="10" class="form-control" id="AST_donor_key" placeholder="Enter Recipient Registration Key" type="text" required>
-                                                                    <div class="invalid-feedback">Please enter right recipient registration key.</div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row g-2 mb-3">
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(1)" id="butAST1" style="background-color: #1dbdef !important; color: white; font-weight: bold">Activate Income6</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(2)" id="butAST3" style="background-color: #7f00ff !important; color: white; font-weight: bold">Activate income22</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(3)" id="butAST6" style="background-color: #DA291C !important; color: white; font-weight: bold">Activate Income53</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(4)" id="butAST100" style="background-color: #ffc72c !important; color: white; font-weight: bold">Activate income110</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(5)" id="butAST500" style="background-color: #3DDC84 !important; color: white; font-weight: bold">Activate income525</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(6)" id="butAST1000" style="background-color: #e6c200 !important; color: white; font-weight: bold">Activate income1050</button>
-                                                                </div>
-                                                            </div>
-                                                            <button type="button" class="btn btn-dark w-100" id="cenAST" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Renew Teammate Modal -->
-                        <div class="modal fade" id="renewTeammateModal" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header" style="text-align: center">
-                                        <h4 class="modal-title" id="renewTeammateLabel">Renew Teammate</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <section class="container">
-                                            <div class="row justify-content-center">
-                                                <div class="col-md-8 col-lg-8">
-                                                    <div class="card shadow-sm mb-4">
-                                                        <div class="card-body p-4">
-                                                            <div id="errorMessageRenew" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
-                                                            <div id="successMessageRenew" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
-                                                            <h4 class="mb-4 text-center" style="color: #5A2119">Renew Teammate Activation</h4>
-                                                            <div class="form-group mb-3">
-                                                                <label for="renew_key" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
-                                                                    Recipient Registration Key
-                                                                </label>
-                                                                <div class="input-group">
-                                                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                                                    <input name="renew_key" maxlength="10" class="form-control" id="renew_key" placeholder="Enter Recipient Registration Key" type="text" required>
-                                                                    <div class="invalid-feedback">Please enter right recipient registration key.</div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row g-2 mb-3">
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(1)" id="butRenew1" style="background-color: #1dbdef !important; color: white; font-weight: bold">Renew Income6</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(2)" id="butRenew3" style="background-color: #7f00ff !important; color: white; font-weight: bold">Renew income22</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(3)" id="butRenew6" style="background-color: #DA291C !important; color: white; font-weight: bold">Renew Income53</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(4)" id="butRenew100" style="background-color: #ffc72c !important; color: white; font-weight: bold">Renew income110</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(5)" id="butRenew500" style="background-color: #3DDC84 !important; color: white; font-weight: bold">Renew income525</button>
-                                                                </div>
-                                                                <div class="col-12 col-md-6">
-                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(6)" id="butRenew1000" style="background-color: #e6c200 !important; color: white; font-weight: bold">Renew income1050</button>
-                                                                </div>
-                                                            </div>
-                                                            <button type="button" class="btn btn-dark w-100" id="cenRenew" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-<script>
-function openModalAST() {
-    $('#payItForwardModal').modal('show');
-}
-</script>
-<!-- Register A Teammate Modal -->
-<div class="modal fade" id="addNewMember" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header" style="text-align: center">
-                <h4 class="modal-title" id="addNewMemberLabel">Register A Teammate</h4>
-            </div>
-            <div class="modal-body">
-                <section class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 col-lg-8">
-                            <div class="card shadow-sm mb-4">
-                                <div class="card-body p-4">
-                                    <div id="errorMessageRegister" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
-                                    <div id="successMessageRegister" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
-                                    <h4 class="mb-4 text-center" style="color: #5A2119">Register New Teammate</h4>
-                                    <form id="registerTeammateForm">
-                                        <div class="form-group mb-3">
-                                            <label for="teammate_name" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
-                                                Teammate Name
-                                            </label>
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                                <input name="teammate_name" maxlength="50" class="form-control" id="teammate_name" placeholder="Enter Teammate Name" type="text" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <label for="teammate_email" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
-                                                Email Address
-                                            </label>
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                                                <input name="teammate_email" maxlength="100" class="form-control" id="teammate_email" placeholder="Enter Email Address" type="email" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <label for="teammate_phone" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
-                                                Phone Number
-                                            </label>
-                                            <div class="input-group">
-                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                                                <input name="teammate_phone" maxlength="20" class="form-control" id="teammate_phone" placeholder="Enter Phone Number" type="text">
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-success w-100 font-weight-bold">Register</button>
-                                    </form>
-                                    <button type="button" class="btn btn-dark w-100 mt-2" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Member Details Modal -->
-<div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-gradient-primary text-white">
-                <h5 class="modal-title" id="memberModalTitle">
-                    <i class="fa fa-user-circle me-2"></i>
-                    Member Details - <span id="modalTableName"></span>
-                </h5>
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-            </div>
-            <div class="modal-body">
-                <!-- <div id="modalLoading" class="d-flex justify-content-center align-items-center" style="min-height:150px; display:none;">
-                    <div class="spinner-border text-primary" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                </div> -->
-                <div id="modalTableWrapper" style="display:none;">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="card shadow-sm border-0">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3"><i class="fa fa-id-badge me-2"></i>Basic Info</h5>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><strong>Name:</strong> <span id="modalName"></span></li>
-                                        <li class="list-group-item"><strong>Email:</strong> <span id="modalEmail"></span></li>
-                                        <li class="list-group-item"><strong>Registration Key:</strong> <span id="modalRegKey"></span></li>
-                                        <li class="list-group-item"><strong>Mobile:</strong> <span id="modalMobile"></span></li>
-                                        <li class="list-group-item"><strong>Joined:</strong> <span id="modalJoined"></span></li>
-                                        <li class="list-group-item"><strong>Total/Active:</strong> <span id="modalTotalActive"></span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card shadow-sm border-0">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3"><i class="fa fa-chart-bar me-2"></i>Status</h5>
-                                    <div class="row g-2">
-                                        <div class="col-6">
-                                            <div class="bg-light rounded p-2 mb-2">
-                                                <span class="fw-bold text-primary">i6:</span>
-                                                <span id="modalI6"></span>
-                                            </div>
-                                            <div class="bg-light rounded p-2 mb-2">
-                                                <span class="fw-bold text-purple">i22:</span>
-                                                <span id="modalI22"></span>
-                                            </div>
-                                            <div class="bg-light rounded p-2 mb-2">
-                                                <span class="fw-bold text-danger">i53:</span>
-                                                <span id="modalI53"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="bg-light rounded p-2 mb-2">
-                                                <span class="fw-bold text-warning">i110:</span>
-                                                <span id="modalI110"></span>
-                                            </div>
-                                            <div class="bg-light rounded p-2 mb-2">
-                                                <span class="fw-bold text-success">i525:</span>
-                                                <span id="modalI525"></span>
-                                            </div>
-                                            <div class="bg-light rounded p-2 mb-2">
-                                                <span class="fw-bold text-gold">i1050:</span>
-                                                <span id="modalI1050"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="modal-footer bg-light">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                    <i class="fa fa-times me-1"></i>Close
-                </button>
-            </div> -->
-        </div>
-    </div>
-</div>
-<style>
-.text-purple { color: #7f00ff !important; }
-.text-gold { color: #e6c200 !important; }
-</style>
-</div>
-
-
-
-                
-                <div class="row">
+                      <div class="row">
                     <div class="col-lg-12">
                         <div class="success-message"></div>
-                        <div class="card shadow mb-4">
+                        <div class="card mb-4">
                             <div class="card-header align-items-center text-white">
                                 <div class="row w-100">
                                     <div class="col-md-4 mb-2 mb-md-0">
@@ -389,21 +122,284 @@ function openModalAST() {
                             </div>
                         </div>
                     </div>
+                    </div>
                 </div>
 
-
-
-
+                       
+                        <!-- Pay It Forward Modal -->
+                        <div class="modal fade" id="payItForwardModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="text-align: center">
+                                        <h4 class="modal-title" id="activateSingleTokenLabel">Pay It Forward for Free Member</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <section class="container">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-8 col-lg-8">
+                                                    <div class="card mb-4">
+                                                        <div class="card-body p-4">
+                                                            <div id="errorMessageAST" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
+                                                            <div id="successMessageAST" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
+                                                            <h4 class="mb-4 text-center" style="color: #5A2119">Pay It Forward Activation</h4>
+                                                            <div class="form-group mb-3">
+                                                                <label for="AST_donor_key" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
+                                                                    Recipient Registration Key
+                                                                </label>
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                                                    <input name="AST_donor_key" maxlength="10" class="form-control" id="AST_donor_key" placeholder="Enter Recipient Registration Key" type="text" required>
+                                                                    <div class="invalid-feedback">Please enter right recipient registration key.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row g-2 mb-3">
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(1)" id="butAST1" style="background-color: #1dbdef !important; color: white; font-weight: bold">Activate Income6</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(2)" id="butAST3" style="background-color: #7f00ff !important; color: white; font-weight: bold">Activate income22</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(3)" id="butAST6" style="background-color: #DA291C !important; color: white; font-weight: bold">Activate Income53</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(4)" id="butAST100" style="background-color: #ffc72c !important; color: white; font-weight: bold">Activate income110</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(5)" id="butAST500" style="background-color: #3DDC84 !important; color: white; font-weight: bold">Activate income525</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="activateSingleToken(6)" id="butAST1000" style="background-color: #e6c200 !important; color: white; font-weight: bold">Activate income1050</button>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="btn btn-dark w-100" id="cenAST" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
+                        <!-- Renew Teammate Modal -->
+                        <div class="modal fade" id="renewTeammateModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="text-align: center">
+                                        <h4 class="modal-title" id="renewTeammateLabel">Renew Teammate</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <section class="container">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-8 col-lg-8">
+                                                    <div class="card  mb-4">
+                                                        <div class="card-body p-4">
+                                                            <div id="errorMessageRenew" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
+                                                            <div id="successMessageRenew" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
+                                                            <h4 class="mb-4 text-center" style="color: #5A2119">Renew Teammate Activation</h4>
+                                                            <div class="form-group mb-3">
+                                                                <label for="renew_key" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
+                                                                    Recipient Registration Key
+                                                                </label>
+                                                                <div class="input-group">
+                                                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                                                    <input name="renew_key" maxlength="10" class="form-control" id="renew_key" placeholder="Enter Recipient Registration Key" type="text" required>
+                                                                    <div class="invalid-feedback">Please enter right recipient registration key.</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row g-2 mb-3">
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(1)" id="butRenew1" style="background-color: #1dbdef !important; color: white; font-weight: bold">Renew Income6</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(2)" id="butRenew3" style="background-color: #7f00ff !important; color: white; font-weight: bold">Renew income22</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(3)" id="butRenew6" style="background-color: #DA291C !important; color: white; font-weight: bold">Renew Income53</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(4)" id="butRenew100" style="background-color: #ffc72c !important; color: white; font-weight: bold">Renew income110</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(5)" id="butRenew500" style="background-color: #3DDC84 !important; color: white; font-weight: bold">Renew income525</button>
+                                                                </div>
+                                                                <div class="col-12 col-md-6">
+                                                                    <button type="button" class="btn btn-primary w-100 mb-2" onclick="renewSingleToken(6)" id="butRenew1000" style="background-color: #e6c200 !important; color: white; font-weight: bold">Renew income1050</button>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="btn btn-dark w-100" id="cenRenew" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<script>
+function openModalAST() {
+    $('#payItForwardModal').modal('show');
+}
+</script>
+<!-- Register A Teammate Modal -->
+<div class="modal fade" id="addNewMember" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="text-align: center">
+                <h4 class="modal-title" id="addNewMemberLabel">Register A Teammate</h4>
+            </div>
+            <div class="modal-body">
+                <section class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-8">
+                            <div class="card  mb-4">
+                                <div class="card-body p-4">
+                                    <div id="errorMessageRegister" style="display: none; font-weight: bold" class="alert alert-danger mb-3" role="alert"></div>
+                                    <div id="successMessageRegister" style="display: none; font-weight: bold" class="alert alert-success mb-3" role="alert"></div>
+                                    <h4 class="mb-4 text-center" style="color: #5A2119">Register New Teammate</h4>
+                                    <form id="registerTeammateForm">
+                                        <div class="form-group mb-3">
+                                            <label for="teammate_name" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
+                                                Teammate Name
+                                            </label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                                <input name="teammate_name" maxlength="50" class="form-control" id="teammate_name" placeholder="Enter Teammate Name" type="text" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="teammate_email" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
+                                                Email Address
+                                            </label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                                <input name="teammate_email" maxlength="100" class="form-control" id="teammate_email" placeholder="Enter Email Address" type="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="teammate_phone" class="font-weight-bold mb-2" style="color: #1dbdef; font-size: 1.1rem; letter-spacing: 0.5px;">
+                                                Phone Number
+                                            </label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                                <input name="teammate_phone" maxlength="20" class="form-control" id="teammate_phone" placeholder="Enter Phone Number" type="text">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-success w-100 font-weight-bold">Register</button>
+                                    </form>
+                                    <button type="button" class="btn btn-dark w-100 mt-2" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Member Details Modal -->
+<div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-gradient-primary text-white">
+                <h5 class="modal-title" id="memberModalTitle">
+                    <i class="fa fa-user-circle me-2"></i>
+                    Member Details - <span id="modalTableName"></span>
+                </h5>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body">
+                <!-- <div id="modalLoading" class="d-flex justify-content-center align-items-center" style="min-height:150px; display:none;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div> -->
+                <div id="modalTableWrapper" style="display:none;">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="card  border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3"><i class="fa fa-id-badge me-2"></i>Basic Info</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Name:</strong> <span id="modalName"></span></li>
+                                        <li class="list-group-item"><strong>Email:</strong> <span id="modalEmail"></span></li>
+                                        <li class="list-group-item"><strong>Registration Key:</strong> <span id="modalRegKey"></span></li>
+                                        <li class="list-group-item"><strong>Mobile:</strong> <span id="modalMobile"></span></li>
+                                        <li class="list-group-item"><strong>Joined:</strong> <span id="modalJoined"></span></li>
+                                        <li class="list-group-item"><strong>Total/Active:</strong> <span id="modalTotalActive"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card  border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3"><i class="fa fa-chart-bar me-2"></i>Status</h5>
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <div class="bg-light rounded p-2 mb-2">
+                                                <span class="fw-bold text-primary">i6:</span>
+                                                <span id="modalI6"></span>
+                                            </div>
+                                            <div class="bg-light rounded p-2 mb-2">
+                                                <span class="fw-bold text-purple">i22:</span>
+                                                <span id="modalI22"></span>
+                                            </div>
+                                            <div class="bg-light rounded p-2 mb-2">
+                                                <span class="fw-bold text-danger">i53:</span>
+                                                <span id="modalI53"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="bg-light rounded p-2 mb-2">
+                                                <span class="fw-bold text-warning">i110:</span>
+                                                <span id="modalI110"></span>
+                                            </div>
+                                            <div class="bg-light rounded p-2 mb-2">
+                                                <span class="fw-bold text-success">i525:</span>
+                                                <span id="modalI525"></span>
+                                            </div>
+                                            <div class="bg-light rounded p-2 mb-2">
+                                                <span class="fw-bold text-gold">i1050:</span>
+                                                <span id="modalI1050"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="fa fa-times me-1"></i>Close
+                </button>
+            </div> -->
+        </div>
+    </div>
+</div>
+<style>
+.text-purple { color: #7f00ff !important; }
+.text-gold { color: #e6c200 !important; }
+</style>
 
 
 
-								</div> 
-								<!--end::Content container-->
-							</div>
-							<!--end::Content-->
-						</div>
+
+                
+              
+                
+
+
+
+
+                     
 						<!--end::Content wrapper-->
 
                     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
