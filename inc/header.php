@@ -2,7 +2,7 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head>
-		<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
+		<title>CoopINCOME - Dashboard</title>
 		<meta charset="utf-8" /> 
 		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
 		<!--begin::Fonts(mandatory for all pages)-->

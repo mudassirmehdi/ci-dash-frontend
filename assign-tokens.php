@@ -28,75 +28,11 @@
 							<div id="kt_app_content" class="app-content flex-column-fluid">
 								<!--begin::Content container--> 
 								<div id="kt_app_content_container" class="app-container container-fluid">
-								
-                               
-                            <div class="card mb-5">
-                                <div class="card-header align-items-center text-white">
-                                    <h5 class="mb-0">Assign Tokens</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="mb-4">
-                                        <p>
-                                            <b>Elizabeth,</b> to assign <b>CoopIncome Tokens</b>,
-                                            please enter recipient registration key, the number of tokens you want to assign and click the <b>Assign</b> button below.
-                                        </p>
-                                    </div>
-                                    <div class="alert alert-success mb-4" role="alert">
-                                        You have <span class="fw-bold">19 <span class="text-danger">Income6</span></span>,
-                                        <span class="fw-bold">0 <span class="text-danger">Income22</span></span>,
-                                        <span class="fw-bold">0 <span class="text-danger">Income53</span></span>,
-                                        <span class="fw-bold">0 <span class="text-danger">Income110</span></span>,
-                                        <span class="fw-bold">0 <span class="text-danger">Income525</span></span> and
-                                        <span class="fw-bold">0 <span class="text-danger">Income1050</span></span> token(s) available.
-                                    </div>
-                                    <form>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label for="donorKey" class="form-label">Assign To</label>
-                                                <input type="text" class="form-control" id="donorKey" name="donorKey" placeholder="Enter recipient registration key">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="income6Count" class="form-label">Number of <b class="text-danger">Income6</b> token(s)</label>
-                                                <input type="number" class="form-control" id="income6Count" name="income6Count" min="0" max="19" placeholder="Enter number of Income6 Tokens">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label for="income22Count" class="form-label">Number of <b class="text-danger">Income22</b> token(s)</label>
-                                                <input type="number" class="form-control" id="income22Count" name="income22Count" min="0" max="0" placeholder="Enter number of Income22 Tokens">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="income53Count" class="form-label">Number of <b class="text-danger">Income53</b> token(s)</label>
-                                                <input type="number" class="form-control" id="income53Count" name="income53Count" min="0" max="0" placeholder="Enter number of Income53 Tokens">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label for="income110Count" class="form-label">Number of <b class="text-danger">Income110</b> token(s)</label>
-                                                <input type="number" class="form-control" id="income110Count" name="income110Count" min="0" max="0" placeholder="Enter number of Income110 Tokens">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="income525Count" class="form-label">Number of <b class="text-danger">Income525</b> token(s)</label>
-                                                <input type="number" class="form-control" id="income525Count" name="income525Count" min="0" max="0" placeholder="Enter number of Income525 Tokens">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <div class="col-md-6">
-                                                <label for="income1050Count" class="form-label">Number of <b class="text-danger">Income1050</b> token(s)</label>
-                                                <input type="number" class="form-control" id="income1050Count" name="income1050Count" min="0" max="0" placeholder="Enter number of Income1050 Tokens">
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="btn btn-warning px-5">Assign</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-
-
-
-								</div>
+									<div class="row">
+										<div class="col-lg-8"></div>
+										<div class="col-lg-4"></div>
+									</div>
+								</div> 
 								<!--end::Content container-->
 							</div>
 							<!--end::Content-->
