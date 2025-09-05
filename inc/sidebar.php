@@ -1,4 +1,4 @@
-<div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+ <div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true" data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
 						<!--begin::Header-->
 						<div class="app-sidebar-header d-flex flex-column px-10 pt-8" id="kt_app_sidebar_header">
 							<!--begin::Brand-->
@@ -17,27 +17,6 @@
 								<!--end::User--> 
 							</div>
 							<!--end::Brand--> 
-
-							<!-- <div class="sidebar-countdown d-flex flex-stack">
-								<div id="countdown">
-									<div>
-										<span id="days"></span>
-										<div class="label">Days</div>
-									</div>
-									<div>
-										<span id="hours"></span>
-										<div class="label">Hours</div>
-									</div>
-									<div>
-										<span id="minutes"></span>
-										<div class="label">Minutes</div>
-									</div>
-									<div>
-										<span id="seconds"></span>
-										<div class="label">Seconds</div>
-									</div>
-								</div>
-							</div> -->
 						</div>
 						<!--end::Header-->
 						<!--begin::Navs-->
@@ -50,23 +29,41 @@
 										<div class="menu-content menu-heading text-uppercase fs-7">Pages</div>
 									</div>
 									<!--end::Heading-->
+
 									<!--begin:Menu item-->
 									<div class="menu-item here show menu-accordion mb-3">
 										<!--begin:Menu link-->
 										<a class="menu-link" href="index.php">
 											<span class="menu-icon">
-												<i class="ki-outline ki-bank"></i>
+												<i class="ki-duotone ki-home-2 fs-2">
+													<span class="path1"></span>
+													<span class="path2"></span>
+												</i>
+											</span>
+											<span class="menu-title">Dashboard</span> 
+                                        </a>
+										<!--end:Menu link--> 
+									</div> 
+
+
+									<!--begin:Menu item-->
+									<div class="menu-item here show menu-accordion mb-3">
+										<!--begin:Menu link-->
+										<a class="menu-link" href="index.php"> 
+											<span class="menu-icon">
+												<i class="ki-duotone ki-dollar fs-2">
+													<span class="path1"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+												</i>
 											</span>
 											<span class="menu-title">CoopINCOME</span> 
                                         </a>
-										<!--end:Menu link-->
-									 
-									</div>
+										<!--end:Menu link--> 
+									</div> 
 
-
-
-
-	<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-3">
+										<!--begin:Menu item-->
+									<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-3">
 										<!--begin:Menu link-->
 										<span class="menu-link">
 											<span class="menu-icon">
@@ -77,17 +74,18 @@
 													<span class="path4"></span>
 												</i>
 											</span>
-											<span class="menu-title">We Prove It Free</span> <span class="menu-arrow"></span>
+											<span class="menu-title">We Prove It Free</span> 
+											<span class="menu-arrow"></span>
 										</span>
 										<!--end:Menu link--> 
 										<!--begin:Menu sub-->
 										<div class="menu-sub menu-sub-accordion">
 											<!--begin:Menu item-->
-											<div class="menu-item ">
+											<div class="menu-item">
 												<!--begin:Menu link-->
 												<a class="menu-link" href="wpif-cooperative.php">
 													<span class="menu-bullet">
-														<i class="ki-outline ki-microsoft"></i>
+														<span class="bullet bullet-dot"></span>
 													</span>
 													<span class="menu-title">Cooperative</span>
 												</a>
@@ -97,71 +95,60 @@
 											<!--begin:Menu item-->
 											<div class="menu-item">
 												<!--begin:Menu link-->
-												<a class="menu-link" href="wpif-gbo-team.php">
+												<a class="menu-link" href="wpif-cui-team.php">
 													<span class="menu-bullet">
-														<i class="ki-outline ki-profile-user"></i>
+														<span class="bullet bullet-dot"></span>
 													</span>
 													<span class="menu-title">CUI Team</span>
 												</a>
 												<!--end:Menu link-->
 											</div>
-	
+											<!--end:Menu item-->
+											<!--begin:Menu item-->
+											<div class="menu-item">
+												<!--begin:Menu link-->
+												<a class="menu-link" href="index.php" >
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Dashboard</span>
+												</a>
+												<!--end:Menu link-->
+											</div>
 											<!--end:Menu item-->
 										 
 										</div>
 										<!--end:Menu sub-->
 										<!--end:Menu sub-->
 									</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+									<!--end:Menu item-->
 
 
 									<!--end:Menu item-->
                                     <!--begin:Menu item-->
-
-	<div class="menu-item  menu-accordion mb-3">
+									<div class="menu-item  menu-accordion mb-3">
 										<!--begin:Menu link-->
 										<a class="menu-link" href="cooperative.php">
 											<span class="menu-icon">
 												<i class="ki-outline ki-microsoft"></i>
 											</span>
 											<span class="menu-title">Cooperative</span> 
-                                        </a>
+										</a>
 										<!--end:Menu link--> 
 									</div>
-
-
-
-
-			
+									<!--end:Menu item--> 
 									<!--begin:Menu item-->
-
-	<div class="menu-item  menu-accordion mb-3">
+									<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-3">
 										<!--begin:Menu link-->
-										<a class="menu-link" href="gbo-team.php">
+										<a class="menu-link" href="cui-team.php">
 											<span class="menu-icon">
 												<i class="ki-outline ki-profile-user"></i>
 											</span>
 											<span class="menu-title">CUI Team</span> 
-                                        </a>
-										<!--end:Menu link--> 
+										</a>
+										<!--end:Menu link-->
+										 
 									</div>
-
-
-							
 									<!--end:Menu item-->
 									<!--begin:Menu item-->
 									<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-3">
@@ -191,7 +178,7 @@
 											<!--begin:Menu item-->
 											<div class="menu-item">
 												<!--begin:Menu link-->
-												<a class="menu-link" href="add-funds.php" >
+												<a class="menu-link" href="add-funds.php">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -227,7 +214,7 @@
 											<!--begin:Menu item-->
 											<div class="menu-item">
 												<!--begin:Menu link-->
-												<a class="menu-link" href="invoices.php" >
+												<a class="menu-link" href="invoices.php">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -281,7 +268,7 @@
 											<!--begin:Menu item-->
 											<div class="menu-item">
 												<!--begin:Menu link-->
-												<a class="menu-link" href="my-tokens.php" >
+												<a class="menu-link" href="my-tokens.php">
 													<span class="menu-bullet">
 														<i class="ki-outline ki-lts"></i>
 													</span>

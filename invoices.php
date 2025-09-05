@@ -28,9 +28,88 @@
 							<div id="kt_app_content" class="app-content flex-column-fluid">
 								<!--begin::Content container--> 
 								<div id="kt_app_content_container" class="app-container container-fluid">
-									<div class="row">
-										<div class="col-lg-8"></div>
-										<div class="col-lg-4"></div>
+									<div class="card shadow-sm">
+										<div class="card-header">
+											<h3 class="card-title">My Invoices</h3>
+										</div>
+										<div class="card-body">
+											<h4 class="mb-4">Elizabeth, these are your Invoices in CoopIncome™.</h4>
+
+											<div class="table-responsive">
+												<table id="kt_datatable_zero_configuration" class="table table-row-bordered gy-5">
+													<thead>
+														<tr class="fw-semibold fs-6 text-muted">
+															<th>Invoice ID</th>
+															<th>Order ID</th>
+															<th>Invoice Date</th>
+															<th>Action</th> 
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr> 
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr>
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr>  
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr>
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr>
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr>
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr>
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr>
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr>
+														<tr>
+															<td><a href="#" class="badge badge-light-info">2F01FECF28FEBDD03F</a></td>
+															<td>e65d4ae7-0cb5-4aa5-9987-92f4c73cd4b9	</td>
+															<td>Nov 12, 2023 05:59:56	</td>
+															<td> </td> 
+														</tr>
+													</tbody> 
+												</table>
+											</div>
+										</div> 
 									</div>
 								</div> 
 								<!--end::Content container-->

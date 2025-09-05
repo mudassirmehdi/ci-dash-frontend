@@ -28,9 +28,56 @@
 							<div id="kt_app_content" class="app-content flex-column-fluid">
 								<!--begin::Content container--> 
 								<div id="kt_app_content_container" class="app-container container-fluid">
-									<div class="row">
-										<div class="col-lg-8"></div>
-										<div class="col-lg-4"></div>
+									<div class="card mb-5"  >
+										<div class="card-header align-items-center text-center">
+											<h5 class="mb-0">Add Funds To My Digital Wallet</h5>
+										</div>
+										<div class="card-body bg-light">
+											<div class="mb-4 text-start">
+												<h3 class="fw-bold mb-1" style="font-size: 1.1rem;">Elizabeth,</h3>
+												<p class="text-muted">This is where you can add funds to your digital wallet.</p>
+											</div>
+											<form class="addFundsToWallet-form">
+												<div class="mb-3 text-danger show-error-message"></div>
+												<div class="row g-3 align-items-center mb-3">
+													<div class="col-md-3 text-start">
+														<label for="amount" class="form-label fw-bold text-danger">Amount:<span>*</span></label>
+													</div>
+													<div class="col-md-8">
+														<input class="form-control " name="amount" id="amount" type="number" min="10" placeholder="Enter amount">
+														<span class="amount-status error small text-danger"></span>
+													</div>
+												</div>
+												<div class="row g-3 align-items-center mb-3">
+													<div class="col-md-3 text-start">
+														<label for="blockChainType" class="form-label fw-bold text-danger">Blockchain</label>
+													</div>
+													<div class="col-md-8">
+														<select class="form-select " id="blockChainType">
+															<option value="Tron" selected>Tron</option>
+															<option value="Ethereum">Ethereum</option>
+															<option value="Bitcoin">Bitcoin</option>
+														</select>
+													</div>
+												</div>
+												<div class="row g-3 align-items-center mb-4">
+													<div class="col-md-3 text-start">
+														<label class="form-label fw-bold text-danger">Cryptocurrency</label>
+													</div>
+													<div class="col-md-8">
+											
+														<select class="form-select mb-2" id="selectTron">
+															<option value="TRX" selected>TRX | Tron Blockchain</option>
+															<option value="USDTRX">USDTTRX | Tron Blockchain</option>
+														</select>
+													
+													</div>
+												</div> 
+											</form> 
+										</div>
+										<div class="card-footer d-flex justify-content-center">
+											<button class="btn btn-danger">Save Changes</button>
+										</div>
 									</div>
 								</div> 
 								<!--end::Content container-->

@@ -30,9 +30,17 @@
 								<div id="kt_app_content_container" class="app-container container-fluid">
 									<div class="row">
 										<div class="col-lg-12">
+											<div class="mx-auto mb-10 row">
+												<div class="col-lg-4"><button class="w-100 btn btn-color-gray-600 px-20 py-3 bg-info text-white">Pay It Forword</button></div>
+												<div class="col-lg-4"><button class="w-100 btn btn-color-gray-600 px-20 py-3 bg-warning text-white">Renew Teammate</button></div>
+												<div class="col-lg-4"><button class="w-100 btn btn-color-gray-600 px-20 py-3 bg-primary text-white">Register A Teammate</button></div>
+											</div>
+										</div>
+
+										<div class="col-lg-12">
 											<div class="nav-group nav-group-outline mx-auto mb-15 d-flex justify-content-between">
 												<button class="btn btn-color-gray-600 btn-active btn-active-secondary px-20 py-3 me-2 active">i6</button>
-												<button class="btn btn-color-gray-600 btn-active btn-active-secondary bg-info text-white px-20 py-3">i22</button>
+												<button class="btn btn-color-gray-600 btn-active btn-active-secondary px-20 py-3 bg-info text-white">i22</button>
 												<button class="btn btn-color-gray-600 btn-active btn-active-secondary px-20 py-3">i53</button>
 												<button class="btn btn-color-gray-600 btn-active btn-active-secondary px-20 py-3">i110</button>
 												<button class="btn btn-color-gray-600 btn-active btn-active-secondary px-20 py-3">i525</button>
@@ -43,38 +51,63 @@
 										<div class="col-lg-12">
 											<div class="card shadow-sm">
 												<div class="card-header">
-													<h3 class="card-title">My CoopINCOME Cooperative Team</h3> 
+													<h3 class="card-title">My Personally Registered CoopIncome™ Members </h3> 
 												</div>
-												<div class="card-body">
-													<div class="alert alert-dismissible bg-light-info d-flex flex-column flex-sm-row w-100 p-5 mb-10">
-														<!--begin::Content-->
-														<div class="d-flex flex-column pe-0 pe-sm-10">
-															<h4 class="fw-semibold mb-3">Welcome <strong>Elizabeth</strong> to your <strong>CoopIncome</strong> Cooperative <strong>you have 64 CoopIncome GBO's</strong> in your team!</h4>
-															<span>This is where you can view how many people are in each of your Crowd Stages. Your Personal CoopIncome GBO's are in <strong>BOLD</strong> and you can see their Registration Key. Use this important information effectively to help grow your Active GBO team by <strong>turning free into REAL Cash.</strong></span>
-														</div>
-														<!--end::Content--> 
-													</div>
-
+												<div class="card-body">  
 													<ul class="nav nav-tabs gap-5 nav-line-tabs mb-5 fs-6">
 														<li class="nav-item ">
-															<a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_1">
-																Level 1: <strong>3 GBOs</strong>
+															<a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_0">
+																All
 															</a>
 														</li>
+
+														<li class="nav-item ">
+															<a class="nav-link " data-bs-toggle="tab" href="#kt_tab_pane_1">
+																Active
+															</a>
+														</li>
+
 														<li class="nav-item">
 															<a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_2">
-																Level 2: <strong>9 GBOs</strong>
+																Lapsed
 															</a>
 														</li>
 														<li class="nav-item">
 															<a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_3">
-																Level 3: <strong>6 GBOs</strong>
+																Free
 															</a>
 														</li>
 													</ul>
 
 													<div class="tab-content" id="myTabContent">
-														<div class="tab-pane fade show active" id="kt_tab_pane_1" role="tabpanel">
+														<div class="tab-pane fade show active" id="kt_tab_pane_0" role="tabpanel">
+															<table id="datatable_level0" class="table table-striped table-row-bordered gy-5 gs-7 border rounded">
+																<thead>
+																	<tr class="fw-bold fs-6 text-gray-800 px-7">
+																		<th>Position</th>
+																		<th>Name</th> 
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>1</td>
+																		<td>Tiger Nixon</td> 
+																	</tr> 
+
+																	<tr>
+																		<td>2</td>
+																		<td>Tiger Nixon</td> 
+																	</tr> 
+
+																	<tr>
+																		<td>3</td>
+																		<td>Tiger Nixon</td> 
+																	</tr>  
+																</tbody>
+															</table>
+														</div>
+
+														<div class="tab-pane fade" id="kt_tab_pane_1" role="tabpanel">
 															<table id="datatable_level1" class="table table-striped table-row-bordered gy-5 gs-7 border rounded">
 																<thead>
 																	<tr class="fw-bold fs-6 text-gray-800 px-7">

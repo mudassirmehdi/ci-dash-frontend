@@ -1,4 +1,4 @@
-			      	<!--begin::Header-->
+               <!--begin::Header-->
 				<div id="kt_app_header" class="app-header" data-kt-sticky="true" data-kt-sticky-activate="{default: false, lg: true}" data-kt-sticky-name="app-header-sticky" data-kt-sticky-offset="{default: false, lg: '300px'}">
 					<!--begin::Header container-->
 					<div class="app-container container-fluid d-flex flex-stack" id="kt_app_header_container">
@@ -12,8 +12,8 @@
 							</div>
 							<!--begin::Logo image-->
 							<a href="index.html">
-								<img alt="Logo" src="assets/media/logos/demo36.svg" class="h-30px theme-light-show" />
-								<img alt="Logo" src="assets/media/logos/demo36.svg" class="h-30px theme-dark-show" />
+								<img alt="Logo" src="assets/images/fav-icon.webp" class="h-30px theme-light-show" />
+								<img alt="Logo" src="assets/images/fav-icon.webp" class="h-30px theme-dark-show" />
 							</a>
 							<!--end::Logo image-->
 						</div>
@@ -25,7 +25,7 @@
 								<div class="d-flex align-items-center mb-3">
 									<!--begin::Logo-->
 									<a href="index.html">
-										<img alt="Logo" src="assets/media/logos/demo36.svg" class="me-7 d-none d-lg-inline h-25px" />
+										<img alt="Logo" src="assets/images/fav-icon.webp" class="me-7 d-none d-lg-inline h-25px" />
 									</a>
 									<!--end::Logo-->
 									<!--begin::Breadcrumb-->
