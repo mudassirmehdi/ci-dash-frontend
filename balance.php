@@ -34,17 +34,17 @@
 												<div class="card-header align-items-center text-center rounded-top-4">
 													<h3 class="mb-0"><i class="bi bi-wallet2 me-2 fs-2"></i>CoopWallet Balance Information</h3>
 												</div>
-												<div class="card-body bg-light">
-													<h5 class="fw-bold text-black mb-4 text-center">Here you can see your account current balances.</h5>
-													<div class="mb-3 p-3 rounded-3 bg-white shadow-sm d-flex align-items-center justify-content-between">
+												<div class="card-body ">
+													<h5 class="fw-bold text-dark mb-4 text-center">Here you can see your account current balances.</h5>
+													<div class="mb-3 p-3 rounded-3 mb-5 bg-light d-flex align-items-center justify-content-between">
 														<span class="fs-5 fw-semibold text-dark"><i class="bi bi-currency-dollar text-success me-2 fs-2"></i>USD</span>
 														<span class="fs-4 fw-bold text-success">$29,432.46</span>
 													</div>
-													<div class="mb-3 p-3 rounded-3 bg-white shadow-sm d-flex align-items-center justify-content-between">
+													<div class="mb-3 p-3 rounded-3 mb-5 bg-light d-flex align-items-center justify-content-between">
 														<span class="fs-5 fw-semibold text-dark"><img src="https://img.icons8.com/color/24/000000/coins.png" class="me-2"/>CoopDollar</span>
 														<span class="fs-4 fw-bold text-primary">$85.74</span>
 													</div>
-													<div class="p-3 rounded-3 bg-white shadow-sm d-flex align-items-center justify-content-between">
+													<div class="p-3 rounded-3 mb-5 bg-light d-flex align-items-center justify-content-between">
 														<span class="fs-5 fw-semibold text-dark"><img src="https://img.icons8.com/color/24/000000/bitcoin.png" class="me-2"/>CoopBits</span>
 														<span>
 															<span class="fs-4 fw-bold text-warning">125,653</span>
