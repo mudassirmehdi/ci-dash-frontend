@@ -257,7 +257,7 @@
 												<div class="card-body">
 													<form action="" method="" class="invite-form">
 														<!-- 1st -->
-															<div class="form-section">
+															<div class="form-section bg-light border-light">
 																<h6>1st</h6>
 																<div class="row g-3">
 																	<div class="col-md-6">
@@ -276,7 +276,7 @@
 															</div>
 
 															<!-- 2nd -->
-															<div class="form-section">
+															<div class="form-section bg-light border-light">
 																<h6>2nd</h6>
 																<div class="row g-3">
 																	<div class="col-md-6">
@@ -295,7 +295,7 @@
 															</div>
 
 															<!-- 3rd -->
-															<div class="form-section">
+															<div class="form-section bg-light border-light">
 															    <h6>3rd</h6>
 																<div class="row g-3">
 																	<div class="col-md-6">

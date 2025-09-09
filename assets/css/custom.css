@@ -9,8 +9,7 @@
     display: inline-flex;
 }
 
-.welcome-content h1 {
-    color: #000; 
+.welcome-content h1 { 
     font-size: 46px;
     font-style: normal;
     font-weight: 700;
@@ -19,8 +18,7 @@
     margin-bottom: 16px;
 }
 
-.welcome-content p {
-    color: rgba(0, 0, 0, 0.46);
+.welcome-content p { 
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -37,12 +35,10 @@
 } 
 
  
-.invite-form .form-section {
-    border: 1px solid #e9ecef;
+.invite-form .form-section { 
     border-radius: 12px;
     padding: 20px;
-    margin-bottom: 20px;
-    background: #fafbfc;
+    margin-bottom: 20px; 
 }
 .invite-form .form-section h6 {
     font-weight: 600;

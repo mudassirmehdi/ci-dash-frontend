@@ -36,7 +36,7 @@
 														<div class="col-8">
 															<div class="welcome-content">
 																<div>
-																	<h1>Hey David!👋</h1>
+																	<h1 >Hey David!👋</h1>
 																	<p>Ready to make today count? Let’s see how you’re doing</p>
 																</div>
 																<div class="w-action">
@@ -134,7 +134,7 @@
 												<div class="card-body">
 													<form action="" method="" class="invite-form">
 														<!-- 1st -->
-															<div class="form-section">
+															<div class="form-section bg-light border-light">
 																<h6>1st</h6>
 																<div class="row g-3">
 																	<div class="col-md-6">
@@ -153,7 +153,7 @@
 															</div>
 
 															<!-- 2nd -->
-															<div class="form-section">
+															<div class="form-section bg-light border-light">
 																<h6>2nd</h6>
 																<div class="row g-3">
 																	<div class="col-md-6">
@@ -172,7 +172,7 @@
 															</div>
 
 															<!-- 3rd -->
-															<div class="form-section">
+															<div class="form-section bg-light border-light">
 															    <h6>3rd</h6>
 																<div class="row g-3">
 																	<div class="col-md-6">
