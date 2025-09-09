@@ -3,19 +3,32 @@
 						<div class="app-sidebar-header d-flex flex-column px-10 pt-8" id="kt_app_sidebar_header">
 							<!--begin::Brand-->
 							<div class="d-flex flex-stack mb-10">
-								<!--begin::User-->
-								<div class="">
-									<!--begin::User info-->
+								<!--begin::User 
+								<div class=""> 
 									<div class="d-flex align-items-center" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-overflow="true" data-kt-menu-placement="top-start">
 										<div class="d-flex flex-center cursor-pointer symbol symbol-custom symbol-40px">
 											<img src="assets/media/avatars/300-2.jpg" alt="image" />
+										</div> 
+									</div> 
+								 
+								</div>
+								 end::User--> 
+
+								<!--begin::Sidebar lOgo-->
+								<div class="sidebar-logo">
+									<!--begin::User info-->
+									<div class="d-flex align-items-center" >
+										<div class="d-flex flex-center ">
+											<img src="assets/images/logo-i.png" alt="image" height="80">
 										</div> 
 									</div>
 									<!--end::User info-->
 								 
 								</div>
-								<!--end::User--> 
+								<!--end::Sidebar lOgo--> 
+
 							</div>
+
 							<!--end::Brand--> 
 						</div>
 						<!--end::Header-->
