@@ -24,7 +24,7 @@
 							<div class="page-title gap-4 me-3 mb-5 mb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="{default: 'prepend', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_content_container', lg: '#kt_app_header_wrapper'}">
 								<div class="d-flex align-items-center mb-3">
 									<!--begin::Logo-->
-									<a href="index.html">
+									<a href="index.php">
 										<img alt="Logo" src="assets/images/fav-icon.webp" class="me-7 d-none d-lg-inline h-25px" />
 									</a>
 									<!--end::Logo-->
@@ -32,7 +32,7 @@
 									<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7">
 										<!--begin::Item-->
 										<li class="breadcrumb-item text-gray-700 fw-bold lh-1 mx-n1">
-											<a href="index.html" class="text-hover-primary">
+											<a href="index.php" class="text-hover-primary">
 												<i class="ki-duotone ki-home text-gray-700 fs-6"></i>
 											</a>
 										</li>
