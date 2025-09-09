@@ -49,7 +49,7 @@
 									<!--begin:Menu item-->
 									<div class="menu-item here show menu-accordion mb-3">
 										<!--begin:Menu link-->
-										<a class="menu-link" href="index.php"> 
+										<a class="menu-link" href="income.php"> 
 											<span class="menu-icon">
 												<i class="ki-duotone ki-dollar fs-2">
 													<span class="path1"></span>
@@ -107,7 +107,7 @@
 											<!--begin:Menu item-->
 											<div class="menu-item">
 												<!--begin:Menu link-->
-												<a class="menu-link" href="index.php" >
+												<a class="menu-link" href="income.php" >
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>

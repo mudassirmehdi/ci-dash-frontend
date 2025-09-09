@@ -168,18 +168,22 @@
 
 										<!--begin::Menu item-->
 										<div class="menu-item px-5">
-											<a href="#" class="menu-link px-5">Dashboard</a>
+											<a href="index.php" class="menu-link px-5">
+												<span class="menu-text">Dashboard</span>
+											</a>
 										</div>
 										<!--end::Menu item-->
 								
 										<!--begin::Menu item-->
 										<div class="menu-item px-5">
-											<a href="#" class="menu-link px-5">My Profile</a>
+											<a href="profile-overview.php" class="menu-link px-5">
+												<span class="menu-text">My Profile</span>
+											</a>
 										</div>
 										<!--end::Menu item-->
 										<!--begin::Menu item-->
 										<div class="menu-item px-5">
-											<a href="#" class="menu-link px-5">
+											<a href="balance.php" class="menu-link px-5">
 												<span class="menu-text">My CoopWallet</span> 
 											</a>
 										</div>

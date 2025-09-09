@@ -28,18 +28,19 @@
 							<div id="kt_app_content" class="app-content flex-column-fluid">
 								<!--begin::Content container--> 
 								<div id="kt_app_content_container" class="app-container container-fluid">
-									<div class="row">
-										<div class="col-lg-12">
-											 <div class="nav-group nav-group-outline mx-auto mb-15" data-kt-buttons="true" data-kt-initialized="1">
-													<button class="btn btn-color-gray-600 btn-active btn-active-secondary px-6 py-3 me-2 active" >Current Matrix</button>
-													<button class="btn btn-color-gray-600 btn-active btn-active-secondary px-6 py-3" >Archive Matrix 
+									<div class="row justify-content-center">  
+										<div class="col-lg-4">
+											 <div class="nav-group nav-group-outline mx-auto mb-10" data-kt-buttons="true" data-kt-initialized="1">
+													<button class="btn btn-color-gray-600 btn-active btn-active-secondary px-8 py-3 me-2 active" >Current Matrix</button>
+													<button class="btn btn-color-gray-600 btn-active btn-active-secondary px-8 py-3" >Archive Matrix 
 														<span class="badge badge-light-info fs-base"> 
 															01
 													    </span>
 													</button>
 											 </div> 
-										</div> 
-
+										</div>
+									</div>
+									<div class="row">  
 										<div class="col-lg-12">
 											<div class="card shadow-sm">
 												<div class="card-header">
