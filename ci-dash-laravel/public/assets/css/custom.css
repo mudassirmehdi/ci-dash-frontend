@@ -1,0 +1,71 @@
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}    
+
+.welcome-content .w-action {
+    margin-top: auto;
+    display: inline-flex;
+}
+
+.welcome-content h1 { 
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -3px;
+    margin-bottom: 16px;
+}
+
+.welcome-content p { 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: -0.084px; 
+}
+
+.slider-img-wrapper { 
+    margin: 10px;  
+}
+
+.slider-img-wrapper img { 
+    object-fit: cover;
+} 
+
+ 
+.invite-form .form-section { 
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+.invite-form .form-section h6 {
+    font-weight: 600;
+    color: #6c63ff;
+    margin-bottom: 15px;
+}
+.invite-form .form-control {
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+.invite-form .btn-invite {
+    background: #7d2eff;
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px 30px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(125, 46, 255, 0.3);
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.invite-form  .btn-invite:hover {
+    background: #5c1fcc;
+}
+.invite-form  .captcha {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+ 
