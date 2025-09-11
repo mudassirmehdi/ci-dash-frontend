@@ -24,14 +24,14 @@ class AuthController extends Controller
     {
         // Validate the incoming request
         $validated = $request->validate([
-            'name' => 'required|string',
+            'email' => 'required|email',
             'password' => 'required|min:6',
         ]);
 
         // Attempt to authenticate the user
-        if (Auth::attempt(['name' => $request->name, 'password' => $request->password])) {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             // Authentication successful
-            return redirect()->route('home')->with('success', 'Login successfull');
+            return redirect()->intended('/dashboard');
         }
 
        return redirect()->route('log')->with('error', 'Invalid credentials');
@@ -55,9 +55,6 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-
-        // Authenticate the user after registration
-        Auth::login($user);
 
         // Return a success response
         return redirect()->route('log')->with('success', 'Register successfull');
